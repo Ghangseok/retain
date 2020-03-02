@@ -1,0 +1,1596 @@
+499  2020-03-02 13:49:53.238 [restartedMain] DEBUG o.s.b.c.l.ClasspathLoggingApplicationListener - Application started with classpath: [file:/Users/ghangses/dev/workspace/att/bill/target/classes/]
+555  2020-03-02 13:49:53.294 [restartedMain] INFO  c.att.retain.bill.SEL001BillSelect - Starting SEL001BillSelect on ghangses01-mac with PID 44029 (/Users/ghangses/dev/workspace/att/bill/target/classes started by ghangses in /Users/ghangses/dev/workspace/att/bill)
+556  2020-03-02 13:49:53.295 [restartedMain] DEBUG c.att.retain.bill.SEL001BillSelect - Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+556  2020-03-02 13:49:53.295 [restartedMain] INFO  c.att.retain.bill.SEL001BillSelect - No active profile set, falling back to default profiles: default
+557  2020-03-02 13:49:53.296 [restartedMain] DEBUG o.s.boot.SpringApplication - Loading source class com.att.retain.bill.SEL001BillSelect
+594  2020-03-02 13:49:53.333 [restartedMain] DEBUG o.s.b.c.c.ConfigFileApplicationListener - Loaded config file 'file:/Users/ghangses/dev/workspace/att/bill/target/classes/application.properties' (classpath:/application.properties)
+595  2020-03-02 13:49:53.334 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in /Users/ghangses/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/Users/ghangses/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/Users/ghangses/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/Users/ghangses/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/Users/ghangses/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/Users/ghangses/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/Users/ghangses/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+595  2020-03-02 13:49:53.334 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in /Users/ghangses/.m2/repository/com/oracle/ojdbc/ojdbc8/19.3.0.0/ojdbc8-19.3.0.0.jar referenced one or more files that do not exist: file:/Users/ghangses/.m2/repository/com/oracle/ojdbc/ojdbc8/19.3.0.0/oraclepki.jar
+595  2020-03-02 13:49:53.334 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in /Users/ghangses/.m2/repository/com/oracle/ojdbc/oraclepki/19.3.0.0/oraclepki-19.3.0.0.jar referenced one or more files that do not exist: file:/Users/ghangses/.m2/repository/com/oracle/ojdbc/oraclepki/19.3.0.0/osdt_core.jar,file:/Users/ghangses/.m2/repository/com/oracle/ojdbc/oraclepki/19.3.0.0/osdt_cert.jar,file:/Users/ghangses/.m2/repository/com/oracle/ojdbc/oraclepki/oracle.osdt/osdt_core.jar,file:/Users/ghangses/.m2/repository/com/oracle/ojdbc/oraclepki/oracle.osdt/osdt_cert.jar
+595  2020-03-02 13:49:53.334 [restartedMain] DEBUG o.s.b.d.restart.ChangeableUrls - Matching URLs for reloading : [file:/Users/ghangses/dev/workspace/att/bill/target/classes/]
+595  2020-03-02 13:49:53.334 [restartedMain] DEBUG o.s.b.d.settings.DevToolsSettings - Included patterns for restart : []
+595  2020-03-02 13:49:53.334 [restartedMain] DEBUG o.s.b.d.settings.DevToolsSettings - Excluded patterns for restart : [/spring-boot-actuator/target/classes/, /spring-boot-devtools/target/classes/, /spring-boot/target/classes/, /spring-boot-starter-[\w-]+/, /spring-boot-autoconfigure/target/classes/, /spring-boot-starter/target/classes/]
+596  2020-03-02 13:49:53.335 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+596  2020-03-02 13:49:53.335 [restartedMain] DEBUG o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@79bfb54b
+612  2020-03-02 13:49:53.351 [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+621  2020-03-02 13:49:53.360 [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory'
+715  2020-03-02 13:49:53.454 [restartedMain] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Ignored because not a concrete top-level class: file [/Users/ghangses/dev/workspace/att/bill/target/classes/com/att/retain/bill/repository/RequestTransactionRepository.class]
+845  2020-03-02 13:49:53.584 [restartedMain] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Found key 'spring.jmx.enabled' in PropertySource 'configurationProperties' with value of type String
+847  2020-03-02 13:49:53.586 [restartedMain] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Found key 'spring.application.admin.enabled' in PropertySource 'configurationProperties' with value of type String
+890  2020-03-02 13:49:53.629 [restartedMain] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Found key 'spring.jmx.enabled' in PropertySource 'configurationProperties' with value of type String
+982  2020-03-02 13:49:53.721 [restartedMain] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Found key 'spring.jmx.enabled' in PropertySource 'configurationProperties' with value of type String
+989  2020-03-02 13:49:53.728 [restartedMain] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Found key 'spring.application.admin.enabled' in PropertySource 'configurationProperties' with value of type String
+1003 2020-03-02 13:49:53.742 [restartedMain] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Found key 'spring.jmx.enabled' in PropertySource 'configurationProperties' with value of type String
+1044 2020-03-02 13:49:53.783 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1051 2020-03-02 13:49:53.790 [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.AutoConfigurationPackages'
+1058 2020-03-02 13:49:53.797 [restartedMain] DEBUG o.s.b.a.AutoConfigurationPackages - @EnableAutoConfiguration was declared on a class in the package 'com.att.retain.bill'. Automatic @Repository and @Entity scanning is enabled.
+1060 2020-03-02 13:49:53.799 [restartedMain] DEBUG o.s.d.r.c.RepositoryConfigurationDelegate - Scanning for JPA repositories in packages com.att.retain.bill.
+1068 2020-03-02 13:49:53.807 [restartedMain] DEBUG o.s.d.r.c.RepositoryComponentProvider - Identified candidate component class: file [/Users/ghangses/dev/workspace/att/bill/target/classes/com/att/retain/bill/repository/RequestTransactionRepository.class]
+1097 2020-03-02 13:49:53.836 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 36ms. Found 1 JPA repository interfaces.
+1220 2020-03-02 13:49:53.959 [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'propertySourcesPlaceholderConfigurer'
+1224 2020-03-02 13:49:53.963 [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.context.properties.ConfigurationPropertiesBeanDefinitionValidator'
+1224 2020-03-02 13:49:53.963 [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'emBeanDefinitionRegistrarPostProcessor'
+1224 2020-03-02 13:49:53.963 [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.devtools.autoconfigure.DevToolsDataSourceAutoConfiguration$DatabaseShutdownExecutorEntityManagerFactoryDependsOnPostProcessor'
+1244 2020-03-02 13:49:53.983 [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+1245 2020-03-02 13:49:53.984 [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+1246 2020-03-02 13:49:53.985 [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
+1248 2020-03-02 13:49:53.987 [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+1248 2020-03-02 13:49:53.987 [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+1250 2020-03-02 13:49:53.989 [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+1250 2020-03-02 13:49:53.989 [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor'
+1250 2020-03-02 13:49:53.989 [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.context.internalConfigurationPropertiesBinder'
+1251 2020-03-02 13:49:53.990 [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.context.internalConfigurationPropertiesBinderFactory'
+1253 2020-03-02 13:49:53.992 [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+1279 2020-03-02 13:49:54.018 [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'dataSourceInitializerPostProcessor'
+1283 2020-03-02 13:49:54.022 [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'persistenceExceptionTranslationPostProcessor'
+1285 2020-03-02 13:49:54.024 [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'persistenceExceptionTranslationPostProcessor' via factory method to bean named 'environment'
+1287 2020-03-02 13:49:54.026 [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'dataSourceInitializedPublisher'
+1291 2020-03-02 13:49:54.030 [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'inMemoryDatabaseShutdownExecutor'
+1292 2020-03-02 13:49:54.031 [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+1292 2020-03-02 13:49:54.031 [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration'
+1302 2020-03-02 13:49:54.041 [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'transactionAttributeSource'
+1306 2020-03-02 13:49:54.045 [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'transactionInterceptor'
+1306 2020-03-02 13:49:54.045 [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'transactionInterceptor' via factory method to bean named 'transactionAttributeSource'
+1311 2020-03-02 13:49:54.050 [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'org.springframework.transaction.config.internalTransactionAdvisor' via factory method to bean named 'transactionAttributeSource'
+1312 2020-03-02 13:49:54.051 [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'org.springframework.transaction.config.internalTransactionAdvisor' via factory method to bean named 'transactionInterceptor'
+1315 2020-03-02 13:49:54.054 [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.devtools.autoconfigure.DevToolsDataSourceAutoConfiguration'
+1318 2020-03-02 13:49:54.057 [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'dataSource'
+1318 2020-03-02 13:49:54.057 [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari'
+1319 2020-03-02 13:49:54.058 [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties'
+1338 2020-03-02 13:49:54.077 [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'dataSource' via factory method to bean named 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties'
+1350 2020-03-02 13:49:54.089 [restartedMain] DEBUG com.zaxxer.hikari.HikariConfig - Driver class oracle.jdbc.driver.OracleDriver found in Thread context class loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader@7500aeeb
+1380 2020-03-02 13:49:54.119 [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker'
+1382 2020-03-02 13:49:54.121 [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' via constructor to bean named 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties'
+1382 2020-03-02 13:49:54.121 [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' via constructor to bean named 'org.springframework.context.annotation.AnnotationConfigApplicationContext@79bfb54b'
+1385 2020-03-02 13:49:54.124 [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'inMemoryDatabaseShutdownExecutor' via factory method to bean named 'dataSource'
+1385 2020-03-02 13:49:54.124 [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'inMemoryDatabaseShutdownExecutor' via factory method to bean named 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties'
+1386 2020-03-02 13:49:54.125 [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'entityManagerFactory'
+1386 2020-03-02 13:49:54.125 [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration'
+1387 2020-03-02 13:49:54.126 [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'spring.jpa-org.springframework.boot.autoconfigure.orm.jpa.JpaProperties'
+1390 2020-03-02 13:49:54.129 [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'spring.jpa.hibernate-org.springframework.boot.autoconfigure.orm.jpa.HibernateProperties'
+1391 2020-03-02 13:49:54.130 [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration' via constructor to bean named 'dataSource'
+1391 2020-03-02 13:49:54.130 [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration' via constructor to bean named 'spring.jpa-org.springframework.boot.autoconfigure.orm.jpa.JpaProperties'
+1391 2020-03-02 13:49:54.130 [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration' via constructor to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@48ab43a7'
+1391 2020-03-02 13:49:54.130 [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration' via constructor to bean named 'spring.jpa.hibernate-org.springframework.boot.autoconfigure.orm.jpa.HibernateProperties'
+1393 2020-03-02 13:49:54.132 [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'hikariPoolDataSourceMetadataProvider'
+1393 2020-03-02 13:49:54.132 [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration$HikariPoolDataSourceMetadataProviderConfiguration'
+1397 2020-03-02 13:49:54.136 [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'entityManagerFactoryBuilder'
+1398 2020-03-02 13:49:54.137 [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'jpaVendorAdapter'
+1436 2020-03-02 13:49:54.175 [restartedMain] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+1438 2020-03-02 13:49:54.177 [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'entityManagerFactoryBuilder' via factory method to bean named 'jpaVendorAdapter'
+1440 2020-03-02 13:49:54.179 [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'entityManagerFactory' via factory method to bean named 'entityManagerFactoryBuilder'
+1444 2020-03-02 13:49:54.183 [restartedMain] DEBUG o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+1444 2020-03-02 13:49:54.183 [restartedMain] DEBUG com.zaxxer.hikari.HikariConfig - HikariPool-1 - configuration:
+1446 2020-03-02 13:49:54.185 [restartedMain] DEBUG com.zaxxer.hikari.HikariConfig - allowPoolSuspension.............false
+1446 2020-03-02 13:49:54.185 [restartedMain] DEBUG com.zaxxer.hikari.HikariConfig - autoCommit......................true
+1446 2020-03-02 13:49:54.185 [restartedMain] DEBUG com.zaxxer.hikari.HikariConfig - catalog.........................none
+1446 2020-03-02 13:49:54.185 [restartedMain] DEBUG com.zaxxer.hikari.HikariConfig - connectionInitSql...............none
+1446 2020-03-02 13:49:54.185 [restartedMain] DEBUG com.zaxxer.hikari.HikariConfig - connectionTestQuery.............none
+1446 2020-03-02 13:49:54.185 [restartedMain] DEBUG com.zaxxer.hikari.HikariConfig - connectionTimeout...............30000
+1446 2020-03-02 13:49:54.185 [restartedMain] DEBUG com.zaxxer.hikari.HikariConfig - dataSource......................none
+1446 2020-03-02 13:49:54.185 [restartedMain] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceClassName.............none
+1446 2020-03-02 13:49:54.185 [restartedMain] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceJNDI..................none
+1446 2020-03-02 13:49:54.185 [restartedMain] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceProperties............{password=<masked>}
+1447 2020-03-02 13:49:54.186 [restartedMain] DEBUG com.zaxxer.hikari.HikariConfig - driverClassName................."oracle.jdbc.driver.OracleDriver"
+1447 2020-03-02 13:49:54.186 [restartedMain] DEBUG com.zaxxer.hikari.HikariConfig - healthCheckProperties...........{}
+1447 2020-03-02 13:49:54.186 [restartedMain] DEBUG com.zaxxer.hikari.HikariConfig - healthCheckRegistry.............none
+1447 2020-03-02 13:49:54.186 [restartedMain] DEBUG com.zaxxer.hikari.HikariConfig - idleTimeout.....................600000
+1447 2020-03-02 13:49:54.186 [restartedMain] DEBUG com.zaxxer.hikari.HikariConfig - initializationFailTimeout.......1
+1447 2020-03-02 13:49:54.186 [restartedMain] DEBUG com.zaxxer.hikari.HikariConfig - isolateInternalQueries..........false
+1447 2020-03-02 13:49:54.186 [restartedMain] DEBUG com.zaxxer.hikari.HikariConfig - jdbcUrl.........................jdbc:oracle:thin:@localhost:1521:xe
+1447 2020-03-02 13:49:54.186 [restartedMain] DEBUG com.zaxxer.hikari.HikariConfig - leakDetectionThreshold..........0
+1447 2020-03-02 13:49:54.186 [restartedMain] DEBUG com.zaxxer.hikari.HikariConfig - maxLifetime.....................1800000
+1447 2020-03-02 13:49:54.186 [restartedMain] DEBUG com.zaxxer.hikari.HikariConfig - maximumPoolSize.................10
+1447 2020-03-02 13:49:54.186 [restartedMain] DEBUG com.zaxxer.hikari.HikariConfig - metricRegistry..................none
+1447 2020-03-02 13:49:54.186 [restartedMain] DEBUG com.zaxxer.hikari.HikariConfig - metricsTrackerFactory...........none
+1447 2020-03-02 13:49:54.186 [restartedMain] DEBUG com.zaxxer.hikari.HikariConfig - minimumIdle.....................10
+1447 2020-03-02 13:49:54.186 [restartedMain] DEBUG com.zaxxer.hikari.HikariConfig - password........................<masked>
+1447 2020-03-02 13:49:54.186 [restartedMain] DEBUG com.zaxxer.hikari.HikariConfig - poolName........................"HikariPool-1"
+1448 2020-03-02 13:49:54.187 [restartedMain] DEBUG com.zaxxer.hikari.HikariConfig - readOnly........................false
+1448 2020-03-02 13:49:54.187 [restartedMain] DEBUG com.zaxxer.hikari.HikariConfig - registerMbeans..................false
+1448 2020-03-02 13:49:54.187 [restartedMain] DEBUG com.zaxxer.hikari.HikariConfig - scheduledExecutor...............none
+1448 2020-03-02 13:49:54.187 [restartedMain] DEBUG com.zaxxer.hikari.HikariConfig - schema..........................none
+1448 2020-03-02 13:49:54.187 [restartedMain] DEBUG com.zaxxer.hikari.HikariConfig - threadFactory...................internal
+1448 2020-03-02 13:49:54.187 [restartedMain] DEBUG com.zaxxer.hikari.HikariConfig - transactionIsolation............default
+1448 2020-03-02 13:49:54.187 [restartedMain] DEBUG com.zaxxer.hikari.HikariConfig - username........................"vindicia"
+1448 2020-03-02 13:49:54.187 [restartedMain] DEBUG com.zaxxer.hikari.HikariConfig - validationTimeout...............5000
+1448 2020-03-02 13:49:54.187 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+1449 2020-03-02 13:49:54.188 [restartedMain] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+1449 2020-03-02 13:49:54.188 [restartedMain] DEBUG c.z.hikari.util.DriverDataSource - Driver class oracle.jdbc.driver.OracleDriver found in Thread context class loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader@7500aeeb
+1762 2020-03-02 13:49:54.501 [restartedMain] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@7d0a18c0
+1763 2020-03-02 13:49:54.502 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+1787 2020-03-02 13:49:54.526 [restartedMain] DEBUG o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+1797 2020-03-02 13:49:54.536 [restartedMain] DEBUG o.h.jpa.internal.util.LogHelper - PersistenceUnitInfo [
+	name: default
+	persistence provider classname: null
+	classloader: org.springframework.boot.devtools.restart.classloader.RestartClassLoader@7500aeeb
+	excludeUnlistedClasses: true
+	JTA datasource: null
+	Non JTA datasource: HikariDataSource (HikariPool-1)
+	Transaction type: RESOURCE_LOCAL
+	PU root URL: file:/Users/ghangses/dev/workspace/att/bill/target/classes/
+	Shared Cache Mode: UNSPECIFIED
+	Validation Mode: AUTO
+	Jar files URLs []
+	Managed classes names [
+		com.att.retain.bill.model.RequestCommunication
+		com.att.retain.bill.model.RequestStatistics
+		com.att.retain.bill.model.RequestTransaction]
+	Mapping files names []
+	Properties []
+1804 2020-03-02 13:49:54.543 [restartedMain] DEBUG o.h.i.i.IntegratorServiceImpl - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+1804 2020-03-02 13:49:54.543 [restartedMain] DEBUG o.h.i.i.IntegratorServiceImpl - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+1805 2020-03-02 13:49:54.544 [restartedMain] DEBUG o.h.i.i.IntegratorServiceImpl - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+1842 2020-03-02 13:49:54.581 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.10.Final}
+1843 2020-03-02 13:49:54.582 [restartedMain] DEBUG org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+1866 2020-03-02 13:49:54.605 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+1909 2020-03-02 13:49:54.648 [restartedMain] DEBUG o.h.service.spi.ServiceBinding - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+1917 2020-03-02 13:49:54.656 [restartedMain] DEBUG o.h.c.i.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+1918 2020-03-02 13:49:54.657 [restartedMain] DEBUG o.h.c.i.RegionFactoryInitiator - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+1925 2020-03-02 13:49:54.664 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@21a67b82
+1931 2020-03-02 13:49:54.670 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+1950 2020-03-02 13:49:54.689 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@62965083
+1950 2020-03-02 13:49:54.689 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@62965083
+1950 2020-03-02 13:49:54.689 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@62965083
+1950 2020-03-02 13:49:54.689 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@59283a06
+1951 2020-03-02 13:49:54.690 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.TrueFalseType@31006eb7
+1951 2020-03-02 13:49:54.690 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.YesNoType@711c5bf
+1952 2020-03-02 13:49:54.691 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@6adfb694
+1953 2020-03-02 13:49:54.692 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@6adfb694
+1953 2020-03-02 13:49:54.692 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@6adfb694
+1953 2020-03-02 13:49:54.692 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration character -> org.hibernate.type.CharacterType@ef65450
+1953 2020-03-02 13:49:54.692 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration char -> org.hibernate.type.CharacterType@ef65450
+1954 2020-03-02 13:49:54.693 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@ef65450
+1954 2020-03-02 13:49:54.693 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@50f02a9e
+1954 2020-03-02 13:49:54.693 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@50f02a9e
+1954 2020-03-02 13:49:54.693 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@50f02a9e
+1955 2020-03-02 13:49:54.694 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.IntegerType@3abe5fa0
+1955 2020-03-02 13:49:54.694 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration int -> org.hibernate.type.IntegerType@3abe5fa0
+1955 2020-03-02 13:49:54.694 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@3abe5fa0
+1956 2020-03-02 13:49:54.695 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@6df4901
+1956 2020-03-02 13:49:54.695 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@6df4901
+1956 2020-03-02 13:49:54.695 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.LongType@6df4901
+1957 2020-03-02 13:49:54.696 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@1d4ae88f
+1957 2020-03-02 13:49:54.696 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@1d4ae88f
+1957 2020-03-02 13:49:54.696 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@1d4ae88f
+1957 2020-03-02 13:49:54.696 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@19bd7927
+1957 2020-03-02 13:49:54.696 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@19bd7927
+1957 2020-03-02 13:49:54.696 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@19bd7927
+1958 2020-03-02 13:49:54.697 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@3e0176e4
+1958 2020-03-02 13:49:54.697 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@3e0176e4
+1959 2020-03-02 13:49:54.698 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@7a97d25d
+1959 2020-03-02 13:49:54.698 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@7a97d25d
+1959 2020-03-02 13:49:54.698 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration string -> org.hibernate.type.StringType@385ef11c
+1959 2020-03-02 13:49:54.698 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.StringType@385ef11c
+1960 2020-03-02 13:49:54.699 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@30033fdd
+1960 2020-03-02 13:49:54.699 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@3079743d
+1961 2020-03-02 13:49:54.700 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration url -> org.hibernate.type.UrlType@55986d10
+1961 2020-03-02 13:49:54.700 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.UrlType@55986d10
+1961 2020-03-02 13:49:54.700 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration Duration -> org.hibernate.type.DurationType@4f587120
+1961 2020-03-02 13:49:54.700 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@4f587120
+1962 2020-03-02 13:49:54.701 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration Instant -> org.hibernate.type.InstantType@4c72ae73
+1962 2020-03-02 13:49:54.701 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@4c72ae73
+1963 2020-03-02 13:49:54.702 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@63517469
+1963 2020-03-02 13:49:54.702 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@63517469
+1964 2020-03-02 13:49:54.703 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@63c5e81f
+1964 2020-03-02 13:49:54.703 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@63c5e81f
+1964 2020-03-02 13:49:54.703 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@1f304ab5
+1965 2020-03-02 13:49:54.704 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@1f304ab5
+1965 2020-03-02 13:49:54.704 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@52a06556
+1965 2020-03-02 13:49:54.704 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@52a06556
+1966 2020-03-02 13:49:54.705 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@67ca7cd6
+1966 2020-03-02 13:49:54.705 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@67ca7cd6
+1968 2020-03-02 13:49:54.707 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@940edd3
+1968 2020-03-02 13:49:54.707 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@940edd3
+1969 2020-03-02 13:49:54.708 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration date -> org.hibernate.type.DateType@4fcad796
+1969 2020-03-02 13:49:54.708 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.DateType@4fcad796
+1970 2020-03-02 13:49:54.709 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration time -> org.hibernate.type.TimeType@5386840f
+1970 2020-03-02 13:49:54.709 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@5386840f
+1971 2020-03-02 13:49:54.710 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.TimestampType@49a85a89
+1971 2020-03-02 13:49:54.710 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@49a85a89
+1971 2020-03-02 13:49:54.710 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@49a85a89
+1972 2020-03-02 13:49:54.711 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@742224d
+1974 2020-03-02 13:49:54.713 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.CalendarType@32177fe2
+1974 2020-03-02 13:49:54.713 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@32177fe2
+1974 2020-03-02 13:49:54.713 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@32177fe2
+1975 2020-03-02 13:49:54.714 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@5d51ec0a
+1975 2020-03-02 13:49:54.714 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.LocaleType@48a1c6d0
+1975 2020-03-02 13:49:54.714 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@48a1c6d0
+1976 2020-03-02 13:49:54.715 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.CurrencyType@5b963ac0
+1976 2020-03-02 13:49:54.715 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@5b963ac0
+1977 2020-03-02 13:49:54.716 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.TimeZoneType@4585543b
+1977 2020-03-02 13:49:54.716 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@4585543b
+1978 2020-03-02 13:49:54.717 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@51317556
+1978 2020-03-02 13:49:54.717 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration class -> org.hibernate.type.ClassType@281efd8c
+1978 2020-03-02 13:49:54.717 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@281efd8c
+1979 2020-03-02 13:49:54.718 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@1bf4899d
+1979 2020-03-02 13:49:54.718 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@1bf4899d
+1979 2020-03-02 13:49:54.718 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@3e4c3e95
+1981 2020-03-02 13:49:54.720 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BinaryType@58d8bb08
+1981 2020-03-02 13:49:54.720 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BinaryType@58d8bb08
+1981 2020-03-02 13:49:54.720 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BinaryType@58d8bb08
+1982 2020-03-02 13:49:54.721 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@3d9986d0
+1982 2020-03-02 13:49:54.721 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@3d9986d0
+1982 2020-03-02 13:49:54.721 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@3d9986d0
+1983 2020-03-02 13:49:54.722 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration row_version -> org.hibernate.type.RowVersionType@78dbfa4d
+1984 2020-03-02 13:49:54.723 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration image -> org.hibernate.type.ImageType@d039aac
+1984 2020-03-02 13:49:54.723 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.CharArrayType@289c6927
+1984 2020-03-02 13:49:54.723 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.CharArrayType@289c6927
+1984 2020-03-02 13:49:54.723 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.CharArrayType@289c6927
+1985 2020-03-02 13:49:54.724 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@48cf6027
+1985 2020-03-02 13:49:54.724 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@48cf6027
+1985 2020-03-02 13:49:54.724 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@48cf6027
+1985 2020-03-02 13:49:54.724 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration text -> org.hibernate.type.TextType@5b55d807
+1986 2020-03-02 13:49:54.725 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration ntext -> org.hibernate.type.NTextType@38de656b
+1987 2020-03-02 13:49:54.726 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BlobType@218ce94f
+1987 2020-03-02 13:49:54.726 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@218ce94f
+1987 2020-03-02 13:49:54.726 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@7484293d
+1988 2020-03-02 13:49:54.727 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.ClobType@661f06fd
+1988 2020-03-02 13:49:54.727 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@661f06fd
+1989 2020-03-02 13:49:54.728 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration nclob -> org.hibernate.type.NClobType@1f7e4a3e
+1989 2020-03-02 13:49:54.728 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@1f7e4a3e
+1990 2020-03-02 13:49:54.729 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@24922827
+1990 2020-03-02 13:49:54.729 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@5e721fc9
+1991 2020-03-02 13:49:54.730 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.SerializableType@610a2d00
+1993 2020-03-02 13:49:54.732 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration object -> org.hibernate.type.ObjectType@1ae6b501
+1993 2020-03-02 13:49:54.732 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@1ae6b501
+1993 2020-03-02 13:49:54.732 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@7d3631c1
+1994 2020-03-02 13:49:54.733 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@52d7dddb
+1994 2020-03-02 13:49:54.733 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@403c3668
+1994 2020-03-02 13:49:54.733 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@521a45d
+1994 2020-03-02 13:49:54.733 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@49d52501
+1994 2020-03-02 13:49:54.733 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@250010e5
+1994 2020-03-02 13:49:54.733 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@42efd5b
+1994 2020-03-02 13:49:54.733 [restartedMain] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@c25b2cf
+2000 2020-03-02 13:49:54.739 [restartedMain] DEBUG o.h.b.internal.BootstrapContextImpl - Injecting JPA temp ClassLoader [org.springframework.instrument.classloading.SimpleThrowawayClassLoader@7941c234] into BootstrapContext; was [null]
+2000 2020-03-02 13:49:54.739 [restartedMain] DEBUG o.h.b.i.ClassLoaderAccessImpl - ClassLoaderAccessImpl#injectTempClassLoader(org.springframework.instrument.classloading.SimpleThrowawayClassLoader@7941c234) [was null]
+2001 2020-03-02 13:49:54.740 [restartedMain] DEBUG o.h.b.internal.BootstrapContextImpl - Injecting ScanEnvironment [org.hibernate.jpa.boot.internal.StandardJpaScanEnvironmentImpl@3af0cdc4] into BootstrapContext; was [null]
+2001 2020-03-02 13:49:54.740 [restartedMain] DEBUG o.h.b.internal.BootstrapContextImpl - Injecting ScanOptions [org.hibernate.boot.archive.scan.internal.StandardScanOptions@4a10982] into BootstrapContext; was [org.hibernate.boot.archive.scan.internal.StandardScanOptions@7907e212]
+2008 2020-03-02 13:49:54.747 [restartedMain] DEBUG o.h.b.internal.BootstrapContextImpl - Injecting JPA temp ClassLoader [null] into BootstrapContext; was [org.springframework.instrument.classloading.SimpleThrowawayClassLoader@7941c234]
+2009 2020-03-02 13:49:54.748 [restartedMain] DEBUG o.h.b.i.ClassLoaderAccessImpl - ClassLoaderAccessImpl#injectTempClassLoader(null) [was org.springframework.instrument.classloading.SimpleThrowawayClassLoader@7941c234]
+2014 2020-03-02 13:49:54.753 [restartedMain] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+2014 2020-03-02 13:49:54.753 [restartedMain] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+2015 2020-03-02 13:49:54.754 [restartedMain] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+2015 2020-03-02 13:49:54.754 [restartedMain] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+2015 2020-03-02 13:49:54.754 [restartedMain] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+2016 2020-03-02 13:49:54.755 [restartedMain] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+2016 2020-03-02 13:49:54.755 [restartedMain] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+2017 2020-03-02 13:49:54.756 [restartedMain] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2018 2020-03-02 13:49:54.757 [restartedMain] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+2018 2020-03-02 13:49:54.757 [restartedMain] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+2019 2020-03-02 13:49:54.758 [restartedMain] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+2019 2020-03-02 13:49:54.758 [restartedMain] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+2019 2020-03-02 13:49:54.758 [restartedMain] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2020 2020-03-02 13:49:54.759 [restartedMain] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+2023 2020-03-02 13:49:54.762 [restartedMain] DEBUG o.h.e.j.e.i.JdbcEnvironmentInitiator - Database ->
+       name : Oracle
+    version : Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production
+      major : 11
+      minor : 2
+2024 2020-03-02 13:49:54.763 [restartedMain] DEBUG o.h.e.j.e.i.JdbcEnvironmentInitiator - Driver ->
+       name : Oracle JDBC driver
+    version : 19.3.0.0.0
+      major : 19
+      minor : 3
+2024 2020-03-02 13:49:54.763 [restartedMain] DEBUG o.h.e.j.e.i.JdbcEnvironmentInitiator - JDBC version : 4.2
+2033 2020-03-02 13:49:54.772 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@b48ef6
+2035 2020-03-02 13:49:54.774 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2098 2020-03-02 13:49:54.837 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@52c2b2fb
+2150 2020-03-02 13:49:54.889 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@4faf2f3
+2202 2020-03-02 13:49:54.941 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@54970ac8
+2262 2020-03-02 13:49:55.001 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@4fa59b33
+2290 2020-03-02 13:49:55.029 [restartedMain] DEBUG o.h.boot.model.relational.Namespace - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+2292 2020-03-02 13:49:55.031 [restartedMain] DEBUG o.h.t.spi.TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@2a16a96f] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@408c776e]
+2346 2020-03-02 13:49:55.085 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@190ed437
+2354 2020-03-02 13:49:55.093 [restartedMain] DEBUG org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: com.att.retain.bill.model.RequestCommunication
+2369 2020-03-02 13:49:55.108 [restartedMain] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2373 2020-03-02 13:49:55.112 [restartedMain] DEBUG o.h.cfg.annotations.EntityBinder - Import with entity name RequestCommunication
+2375 2020-03-02 13:49:55.114 [restartedMain] DEBUG o.h.cfg.annotations.EntityBinder - Bind entity com.att.retain.bill.model.RequestCommunication on table tb_req_comm
+2390 2020-03-02 13:49:55.129 [restartedMain] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tb_req_comm), mappingColumn=page_num, insertable=true, updatable=true, unique=false}
+2392 2020-03-02 13:49:55.131 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property pageNum with lazy=false
+2393 2020-03-02 13:49:55.132 [restartedMain] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.att.retain.bill.model.RequestCommunication.id:pageNum]
+2395 2020-03-02 13:49:55.134 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for pageNum
+2395 2020-03-02 13:49:55.134 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - Building property pageNum
+2398 2020-03-02 13:49:55.137 [restartedMain] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tb_req_comm), mappingColumn=req_date, insertable=true, updatable=true, unique=false}
+2398 2020-03-02 13:49:55.137 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property reqDate with lazy=false
+2398 2020-03-02 13:49:55.137 [restartedMain] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.att.retain.bill.model.RequestCommunication.id:reqDate]
+2398 2020-03-02 13:49:55.137 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for reqDate
+2398 2020-03-02 13:49:55.137 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - Building property reqDate
+2398 2020-03-02 13:49:55.137 [restartedMain] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tb_req_comm), mappingColumn=req_ord_num, insertable=true, updatable=true, unique=false}
+2398 2020-03-02 13:49:55.137 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property reqOrdNum with lazy=false
+2399 2020-03-02 13:49:55.138 [restartedMain] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.att.retain.bill.model.RequestCommunication.id:reqOrdNum]
+2399 2020-03-02 13:49:55.138 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for reqOrdNum
+2399 2020-03-02 13:49:55.138 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - Building property reqOrdNum
+2399 2020-03-02 13:49:55.138 [restartedMain] DEBUG org.hibernate.cfg.BinderHelper - #makeIdGenerator(org.hibernate.mapping.Component([org.hibernate.mapping.Property(pageNum), org.hibernate.mapping.Property(reqDate), org.hibernate.mapping.Property(reqOrdNum)]), null, assigned, , ...)
+2400 2020-03-02 13:49:55.139 [restartedMain] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tb_req_comm), mappingColumn=page_num, insertable=true, updatable=true, unique=false}
+2400 2020-03-02 13:49:55.139 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property pageNum with lazy=false
+2400 2020-03-02 13:49:55.139 [restartedMain] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.att.retain.bill.model.RequestCommunication._identifierMapper:pageNum]
+2400 2020-03-02 13:49:55.139 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for pageNum
+2400 2020-03-02 13:49:55.139 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - Building property pageNum
+2400 2020-03-02 13:49:55.139 [restartedMain] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tb_req_comm), mappingColumn=req_date, insertable=true, updatable=true, unique=false}
+2401 2020-03-02 13:49:55.140 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property reqDate with lazy=false
+2401 2020-03-02 13:49:55.140 [restartedMain] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.att.retain.bill.model.RequestCommunication._identifierMapper:reqDate]
+2401 2020-03-02 13:49:55.140 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for reqDate
+2401 2020-03-02 13:49:55.140 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - Building property reqDate
+2401 2020-03-02 13:49:55.140 [restartedMain] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tb_req_comm), mappingColumn=req_ord_num, insertable=true, updatable=true, unique=false}
+2401 2020-03-02 13:49:55.140 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property reqOrdNum with lazy=false
+2401 2020-03-02 13:49:55.140 [restartedMain] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.att.retain.bill.model.RequestCommunication._identifierMapper:reqOrdNum]
+2402 2020-03-02 13:49:55.141 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for reqOrdNum
+2402 2020-03-02 13:49:55.141 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - Building property reqOrdNum
+2402 2020-03-02 13:49:55.141 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@3a33066d
+2402 2020-03-02 13:49:55.141 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+2402 2020-03-02 13:49:55.141 [restartedMain] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tb_req_comm), mappingColumn=created_dttm, insertable=true, updatable=true, unique=false}
+2402 2020-03-02 13:49:55.141 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property createdDttm with lazy=false
+2402 2020-03-02 13:49:55.141 [restartedMain] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.att.retain.bill.model.RequestCommunication:createdDttm]
+2402 2020-03-02 13:49:55.141 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for createdDttm
+2402 2020-03-02 13:49:55.141 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - Building property createdDttm
+2402 2020-03-02 13:49:55.141 [restartedMain] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tb_req_comm), mappingColumn=msg, insertable=true, updatable=true, unique=false}
+2402 2020-03-02 13:49:55.141 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property msg with lazy=false
+2402 2020-03-02 13:49:55.141 [restartedMain] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.att.retain.bill.model.RequestCommunication:msg]
+2403 2020-03-02 13:49:55.142 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for msg
+2403 2020-03-02 13:49:55.142 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - Building property msg
+2403 2020-03-02 13:49:55.142 [restartedMain] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tb_req_comm), mappingColumn=soap_id, insertable=true, updatable=true, unique=false}
+2403 2020-03-02 13:49:55.142 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property soapId with lazy=false
+2403 2020-03-02 13:49:55.142 [restartedMain] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.att.retain.bill.model.RequestCommunication:soapId]
+2403 2020-03-02 13:49:55.142 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for soapId
+2403 2020-03-02 13:49:55.142 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - Building property soapId
+2403 2020-03-02 13:49:55.142 [restartedMain] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tb_req_comm), mappingColumn=status, insertable=true, updatable=true, unique=false}
+2403 2020-03-02 13:49:55.142 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property status with lazy=false
+2403 2020-03-02 13:49:55.142 [restartedMain] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.att.retain.bill.model.RequestCommunication:status]
+2403 2020-03-02 13:49:55.142 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for status
+2403 2020-03-02 13:49:55.142 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - Building property status
+2403 2020-03-02 13:49:55.142 [restartedMain] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tb_req_comm), mappingColumn=submit_dttm, insertable=true, updatable=true, unique=false}
+2403 2020-03-02 13:49:55.142 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property submitDttm with lazy=false
+2404 2020-03-02 13:49:55.143 [restartedMain] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.att.retain.bill.model.RequestCommunication:submitDttm]
+2404 2020-03-02 13:49:55.143 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for submitDttm
+2404 2020-03-02 13:49:55.143 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - Building property submitDttm
+2405 2020-03-02 13:49:55.144 [restartedMain] DEBUG org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: com.att.retain.bill.model.RequestStatistics
+2405 2020-03-02 13:49:55.144 [restartedMain] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2405 2020-03-02 13:49:55.144 [restartedMain] DEBUG o.h.cfg.annotations.EntityBinder - Import with entity name RequestStatistics
+2405 2020-03-02 13:49:55.144 [restartedMain] DEBUG o.h.cfg.annotations.EntityBinder - Bind entity com.att.retain.bill.model.RequestStatistics on table tb_req_stat
+2406 2020-03-02 13:49:55.145 [restartedMain] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tb_req_stat), mappingColumn=req_date, insertable=true, updatable=true, unique=false}
+2407 2020-03-02 13:49:55.146 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property reqDate with lazy=false
+2407 2020-03-02 13:49:55.146 [restartedMain] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.att.retain.bill.model.RequestStatistics.id:reqDate]
+2407 2020-03-02 13:49:55.146 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for reqDate
+2407 2020-03-02 13:49:55.146 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - Building property reqDate
+2407 2020-03-02 13:49:55.146 [restartedMain] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tb_req_stat), mappingColumn=req_ord_num, insertable=true, updatable=true, unique=false}
+2407 2020-03-02 13:49:55.146 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property reqOrdNum with lazy=false
+2407 2020-03-02 13:49:55.146 [restartedMain] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.att.retain.bill.model.RequestStatistics.id:reqOrdNum]
+2407 2020-03-02 13:49:55.146 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for reqOrdNum
+2407 2020-03-02 13:49:55.146 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - Building property reqOrdNum
+2407 2020-03-02 13:49:55.146 [restartedMain] DEBUG org.hibernate.cfg.BinderHelper - #makeIdGenerator(org.hibernate.mapping.Component([org.hibernate.mapping.Property(reqDate), org.hibernate.mapping.Property(reqOrdNum)]), null, assigned, , ...)
+2407 2020-03-02 13:49:55.146 [restartedMain] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tb_req_stat), mappingColumn=req_date, insertable=true, updatable=true, unique=false}
+2407 2020-03-02 13:49:55.146 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property reqDate with lazy=false
+2407 2020-03-02 13:49:55.146 [restartedMain] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.att.retain.bill.model.RequestStatistics._identifierMapper:reqDate]
+2408 2020-03-02 13:49:55.147 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for reqDate
+2408 2020-03-02 13:49:55.147 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - Building property reqDate
+2408 2020-03-02 13:49:55.147 [restartedMain] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tb_req_stat), mappingColumn=req_ord_num, insertable=true, updatable=true, unique=false}
+2408 2020-03-02 13:49:55.147 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property reqOrdNum with lazy=false
+2408 2020-03-02 13:49:55.147 [restartedMain] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.att.retain.bill.model.RequestStatistics._identifierMapper:reqOrdNum]
+2408 2020-03-02 13:49:55.147 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for reqOrdNum
+2408 2020-03-02 13:49:55.147 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - Building property reqOrdNum
+2408 2020-03-02 13:49:55.147 [restartedMain] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tb_req_stat), mappingColumn=created_dttm, insertable=true, updatable=true, unique=false}
+2408 2020-03-02 13:49:55.147 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property createdDttm with lazy=false
+2408 2020-03-02 13:49:55.147 [restartedMain] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.att.retain.bill.model.RequestStatistics:createdDttm]
+2408 2020-03-02 13:49:55.147 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for createdDttm
+2408 2020-03-02 13:49:55.147 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - Building property createdDttm
+2408 2020-03-02 13:49:55.147 [restartedMain] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tb_req_stat), mappingColumn=end_time_proc, insertable=true, updatable=true, unique=false}
+2409 2020-03-02 13:49:55.148 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property endTimeProc with lazy=false
+2409 2020-03-02 13:49:55.148 [restartedMain] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.att.retain.bill.model.RequestStatistics:endTimeProc]
+2409 2020-03-02 13:49:55.148 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for endTimeProc
+2409 2020-03-02 13:49:55.148 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - Building property endTimeProc
+2409 2020-03-02 13:49:55.148 [restartedMain] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tb_req_stat), mappingColumn=page_size, insertable=true, updatable=true, unique=false}
+2409 2020-03-02 13:49:55.148 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property pageSize with lazy=false
+2409 2020-03-02 13:49:55.148 [restartedMain] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.att.retain.bill.model.RequestStatistics:pageSize]
+2409 2020-03-02 13:49:55.148 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for pageSize
+2409 2020-03-02 13:49:55.148 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - Building property pageSize
+2409 2020-03-02 13:49:55.148 [restartedMain] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tb_req_stat), mappingColumn=retry_times, insertable=true, updatable=true, unique=false}
+2409 2020-03-02 13:49:55.148 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property retryTimes with lazy=false
+2409 2020-03-02 13:49:55.148 [restartedMain] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.att.retain.bill.model.RequestStatistics:retryTimes]
+2409 2020-03-02 13:49:55.148 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for retryTimes
+2409 2020-03-02 13:49:55.148 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - Building property retryTimes
+2410 2020-03-02 13:49:55.149 [restartedMain] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tb_req_stat), mappingColumn=retry_wait_msec, insertable=true, updatable=true, unique=false}
+2410 2020-03-02 13:49:55.149 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property retryWaitMsec with lazy=false
+2410 2020-03-02 13:49:55.149 [restartedMain] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.att.retain.bill.model.RequestStatistics:retryWaitMsec]
+2410 2020-03-02 13:49:55.149 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for retryWaitMsec
+2410 2020-03-02 13:49:55.149 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - Building property retryWaitMsec
+2410 2020-03-02 13:49:55.149 [restartedMain] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tb_req_stat), mappingColumn=start_time_proc, insertable=true, updatable=true, unique=false}
+2410 2020-03-02 13:49:55.149 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property startTimeProc with lazy=false
+2410 2020-03-02 13:49:55.149 [restartedMain] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.att.retain.bill.model.RequestStatistics:startTimeProc]
+2410 2020-03-02 13:49:55.149 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for startTimeProc
+2410 2020-03-02 13:49:55.149 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - Building property startTimeProc
+2410 2020-03-02 13:49:55.149 [restartedMain] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tb_req_stat), mappingColumn=submission_failures, insertable=true, updatable=true, unique=false}
+2410 2020-03-02 13:49:55.149 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property submissionFailues with lazy=false
+2410 2020-03-02 13:49:55.149 [restartedMain] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.att.retain.bill.model.RequestStatistics:submissionFailues]
+2410 2020-03-02 13:49:55.149 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for submissionFailues
+2410 2020-03-02 13:49:55.149 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - Building property submissionFailues
+2410 2020-03-02 13:49:55.149 [restartedMain] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tb_req_stat), mappingColumn=submit_transactions, insertable=true, updatable=true, unique=false}
+2411 2020-03-02 13:49:55.150 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property submitTransactions with lazy=false
+2411 2020-03-02 13:49:55.150 [restartedMain] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.att.retain.bill.model.RequestStatistics:submitTransactions]
+2411 2020-03-02 13:49:55.150 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for submitTransactions
+2411 2020-03-02 13:49:55.150 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - Building property submitTransactions
+2411 2020-03-02 13:49:55.150 [restartedMain] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tb_req_stat), mappingColumn=thread_count, insertable=true, updatable=true, unique=false}
+2411 2020-03-02 13:49:55.150 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property threadCount with lazy=false
+2411 2020-03-02 13:49:55.150 [restartedMain] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.att.retain.bill.model.RequestStatistics:threadCount]
+2411 2020-03-02 13:49:55.150 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for threadCount
+2411 2020-03-02 13:49:55.150 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - Building property threadCount
+2411 2020-03-02 13:49:55.150 [restartedMain] DEBUG org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: com.att.retain.bill.model.RequestTransaction
+2411 2020-03-02 13:49:55.150 [restartedMain] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2411 2020-03-02 13:49:55.150 [restartedMain] DEBUG o.h.cfg.annotations.EntityBinder - Import with entity name RequestTransaction
+2411 2020-03-02 13:49:55.150 [restartedMain] DEBUG o.h.cfg.annotations.EntityBinder - Bind entity com.att.retain.bill.model.RequestTransaction on table tb_req_tx
+2414 2020-03-02 13:49:55.153 [restartedMain] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tb_req_tx), mappingColumn=merchant_transaction_id, insertable=true, updatable=true, unique=false}
+2414 2020-03-02 13:49:55.153 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property merchantTransactionId with lazy=false
+2414 2020-03-02 13:49:55.153 [restartedMain] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.att.retain.bill.model.RequestTransaction.id:merchantTransactionId]
+2414 2020-03-02 13:49:55.153 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for merchantTransactionId
+2414 2020-03-02 13:49:55.153 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - Building property merchantTransactionId
+2415 2020-03-02 13:49:55.154 [restartedMain] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tb_req_tx), mappingColumn=req_date, insertable=true, updatable=true, unique=false}
+2415 2020-03-02 13:49:55.154 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property reqDate with lazy=false
+2415 2020-03-02 13:49:55.154 [restartedMain] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.att.retain.bill.model.RequestTransaction.id:reqDate]
+2415 2020-03-02 13:49:55.154 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for reqDate
+2415 2020-03-02 13:49:55.154 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - Building property reqDate
+2415 2020-03-02 13:49:55.154 [restartedMain] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tb_req_tx), mappingColumn=req_ord_num, insertable=true, updatable=true, unique=false}
+2415 2020-03-02 13:49:55.154 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property reqOrdNum with lazy=false
+2415 2020-03-02 13:49:55.154 [restartedMain] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.att.retain.bill.model.RequestTransaction.id:reqOrdNum]
+2415 2020-03-02 13:49:55.154 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for reqOrdNum
+2415 2020-03-02 13:49:55.154 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - Building property reqOrdNum
+2415 2020-03-02 13:49:55.154 [restartedMain] DEBUG org.hibernate.cfg.BinderHelper - #makeIdGenerator(org.hibernate.mapping.Component([org.hibernate.mapping.Property(merchantTransactionId), org.hibernate.mapping.Property(reqDate), org.hibernate.mapping.Property(reqOrdNum)]), null, assigned, , ...)
+2416 2020-03-02 13:49:55.155 [restartedMain] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tb_req_tx), mappingColumn=merchant_transaction_id, insertable=true, updatable=true, unique=false}
+2416 2020-03-02 13:49:55.155 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property merchantTransactionId with lazy=false
+2416 2020-03-02 13:49:55.155 [restartedMain] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.att.retain.bill.model.RequestTransaction._identifierMapper:merchantTransactionId]
+2416 2020-03-02 13:49:55.155 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for merchantTransactionId
+2416 2020-03-02 13:49:55.155 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - Building property merchantTransactionId
+2416 2020-03-02 13:49:55.155 [restartedMain] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tb_req_tx), mappingColumn=req_date, insertable=true, updatable=true, unique=false}
+2416 2020-03-02 13:49:55.155 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property reqDate with lazy=false
+2416 2020-03-02 13:49:55.155 [restartedMain] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.att.retain.bill.model.RequestTransaction._identifierMapper:reqDate]
+2416 2020-03-02 13:49:55.155 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for reqDate
+2416 2020-03-02 13:49:55.155 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - Building property reqDate
+2416 2020-03-02 13:49:55.155 [restartedMain] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tb_req_tx), mappingColumn=req_ord_num, insertable=true, updatable=true, unique=false}
+2416 2020-03-02 13:49:55.155 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property reqOrdNum with lazy=false
+2416 2020-03-02 13:49:55.155 [restartedMain] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.att.retain.bill.model.RequestTransaction._identifierMapper:reqOrdNum]
+2416 2020-03-02 13:49:55.155 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for reqOrdNum
+2416 2020-03-02 13:49:55.155 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - Building property reqOrdNum
+2417 2020-03-02 13:49:55.156 [restartedMain] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tb_req_tx), mappingColumn=account_holder_name, insertable=true, updatable=true, unique=false}
+2417 2020-03-02 13:49:55.156 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property accountHolderName with lazy=false
+2417 2020-03-02 13:49:55.156 [restartedMain] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.att.retain.bill.model.RequestTransaction:accountHolderName]
+2417 2020-03-02 13:49:55.156 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for accountHolderName
+2417 2020-03-02 13:49:55.156 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - Building property accountHolderName
+2417 2020-03-02 13:49:55.156 [restartedMain] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tb_req_tx), mappingColumn=affiliate_id, insertable=true, updatable=true, unique=false}
+2417 2020-03-02 13:49:55.156 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property affiliateId with lazy=false
+2417 2020-03-02 13:49:55.156 [restartedMain] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.att.retain.bill.model.RequestTransaction:affiliateId]
+2417 2020-03-02 13:49:55.156 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for affiliateId
+2417 2020-03-02 13:49:55.156 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - Building property affiliateId
+2417 2020-03-02 13:49:55.156 [restartedMain] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tb_req_tx), mappingColumn=affiliate_sub_id, insertable=true, updatable=true, unique=false}
+2417 2020-03-02 13:49:55.156 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property affiliateSubId with lazy=false
+2417 2020-03-02 13:49:55.156 [restartedMain] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.att.retain.bill.model.RequestTransaction:affiliateSubId]
+2417 2020-03-02 13:49:55.156 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for affiliateSubId
+2417 2020-03-02 13:49:55.156 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - Building property affiliateSubId
+2417 2020-03-02 13:49:55.156 [restartedMain] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tb_req_tx), mappingColumn=amount, insertable=true, updatable=true, unique=false}
+2417 2020-03-02 13:49:55.156 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property amount with lazy=false
+2417 2020-03-02 13:49:55.156 [restartedMain] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.att.retain.bill.model.RequestTransaction:amount]
+2418 2020-03-02 13:49:55.157 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for amount
+2418 2020-03-02 13:49:55.157 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - Building property amount
+2418 2020-03-02 13:49:55.157 [restartedMain] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tb_req_tx), mappingColumn=auth_code, insertable=true, updatable=true, unique=false}
+2418 2020-03-02 13:49:55.157 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property authCode with lazy=false
+2418 2020-03-02 13:49:55.157 [restartedMain] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.att.retain.bill.model.RequestTransaction:authCode]
+2418 2020-03-02 13:49:55.157 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for authCode
+2418 2020-03-02 13:49:55.157 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - Building property authCode
+2418 2020-03-02 13:49:55.157 [restartedMain] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tb_req_tx), mappingColumn=avs_code, insertable=true, updatable=true, unique=false}
+2418 2020-03-02 13:49:55.157 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property avsCode with lazy=false
+2418 2020-03-02 13:49:55.157 [restartedMain] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.att.retain.bill.model.RequestTransaction:avsCode]
+2418 2020-03-02 13:49:55.157 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for avsCode
+2418 2020-03-02 13:49:55.157 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - Building property avsCode
+2418 2020-03-02 13:49:55.157 [restartedMain] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tb_req_tx), mappingColumn=billing_address_city, insertable=true, updatable=true, unique=false}
+2418 2020-03-02 13:49:55.157 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property billingAddressCity with lazy=false
+2418 2020-03-02 13:49:55.157 [restartedMain] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.att.retain.bill.model.RequestTransaction:billingAddressCity]
+2418 2020-03-02 13:49:55.157 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for billingAddressCity
+2418 2020-03-02 13:49:55.157 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - Building property billingAddressCity
+2419 2020-03-02 13:49:55.158 [restartedMain] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tb_req_tx), mappingColumn=billing_address_country, insertable=true, updatable=true, unique=false}
+2419 2020-03-02 13:49:55.158 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property billingAddressCountry with lazy=false
+2419 2020-03-02 13:49:55.158 [restartedMain] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.att.retain.bill.model.RequestTransaction:billingAddressCountry]
+2419 2020-03-02 13:49:55.158 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for billingAddressCountry
+2419 2020-03-02 13:49:55.158 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - Building property billingAddressCountry
+2419 2020-03-02 13:49:55.158 [restartedMain] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tb_req_tx), mappingColumn=billing_address_county, insertable=true, updatable=true, unique=false}
+2419 2020-03-02 13:49:55.158 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property billingAddressCounty with lazy=false
+2419 2020-03-02 13:49:55.158 [restartedMain] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.att.retain.bill.model.RequestTransaction:billingAddressCounty]
+2419 2020-03-02 13:49:55.158 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for billingAddressCounty
+2419 2020-03-02 13:49:55.158 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - Building property billingAddressCounty
+2419 2020-03-02 13:49:55.158 [restartedMain] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tb_req_tx), mappingColumn=billing_address_district, insertable=true, updatable=true, unique=false}
+2419 2020-03-02 13:49:55.158 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property billingAddressDistrict with lazy=false
+2419 2020-03-02 13:49:55.158 [restartedMain] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.att.retain.bill.model.RequestTransaction:billingAddressDistrict]
+2419 2020-03-02 13:49:55.158 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for billingAddressDistrict
+2419 2020-03-02 13:49:55.158 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - Building property billingAddressDistrict
+2419 2020-03-02 13:49:55.158 [restartedMain] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tb_req_tx), mappingColumn=billing_address_line1, insertable=true, updatable=true, unique=false}
+2419 2020-03-02 13:49:55.158 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property billingAddressLine1 with lazy=false
+2419 2020-03-02 13:49:55.158 [restartedMain] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.att.retain.bill.model.RequestTransaction:billingAddressLine1]
+2419 2020-03-02 13:49:55.158 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for billingAddressLine1
+2419 2020-03-02 13:49:55.158 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - Building property billingAddressLine1
+2419 2020-03-02 13:49:55.158 [restartedMain] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tb_req_tx), mappingColumn=billing_address_line2, insertable=true, updatable=true, unique=false}
+2419 2020-03-02 13:49:55.158 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property billingAddressLine2 with lazy=false
+2419 2020-03-02 13:49:55.158 [restartedMain] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.att.retain.bill.model.RequestTransaction:billingAddressLine2]
+2419 2020-03-02 13:49:55.158 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for billingAddressLine2
+2420 2020-03-02 13:49:55.159 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - Building property billingAddressLine2
+2420 2020-03-02 13:49:55.159 [restartedMain] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tb_req_tx), mappingColumn=billing_address_line3, insertable=true, updatable=true, unique=false}
+2420 2020-03-02 13:49:55.159 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property billingAddressLine3 with lazy=false
+2420 2020-03-02 13:49:55.159 [restartedMain] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.att.retain.bill.model.RequestTransaction:billingAddressLine3]
+2420 2020-03-02 13:49:55.159 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for billingAddressLine3
+2420 2020-03-02 13:49:55.159 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - Building property billingAddressLine3
+2420 2020-03-02 13:49:55.159 [restartedMain] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tb_req_tx), mappingColumn=billing_address_postalcode, insertable=true, updatable=true, unique=false}
+2420 2020-03-02 13:49:55.159 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property billingAddressPostalcode with lazy=false
+2420 2020-03-02 13:49:55.159 [restartedMain] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.att.retain.bill.model.RequestTransaction:billingAddressPostalcode]
+2420 2020-03-02 13:49:55.159 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for billingAddressPostalcode
+2420 2020-03-02 13:49:55.159 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - Building property billingAddressPostalcode
+2420 2020-03-02 13:49:55.159 [restartedMain] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tb_req_tx), mappingColumn=billing_frequency, insertable=true, updatable=true, unique=false}
+2420 2020-03-02 13:49:55.159 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property billingFrequency with lazy=false
+2420 2020-03-02 13:49:55.159 [restartedMain] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.att.retain.bill.model.RequestTransaction:billingFrequency]
+2420 2020-03-02 13:49:55.159 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for billingFrequency
+2420 2020-03-02 13:49:55.159 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - Building property billingFrequency
+2420 2020-03-02 13:49:55.159 [restartedMain] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tb_req_tx), mappingColumn=billing_statement_identifier, insertable=true, updatable=true, unique=false}
+2420 2020-03-02 13:49:55.159 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property billingStatementIdentifier with lazy=false
+2420 2020-03-02 13:49:55.159 [restartedMain] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.att.retain.bill.model.RequestTransaction:billingStatementIdentifier]
+2420 2020-03-02 13:49:55.159 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for billingStatementIdentifier
+2420 2020-03-02 13:49:55.159 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - Building property billingStatementIdentifier
+2421 2020-03-02 13:49:55.160 [restartedMain] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tb_req_tx), mappingColumn=created_dttm, insertable=true, updatable=true, unique=false}
+2421 2020-03-02 13:49:55.160 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property createdDttm with lazy=false
+2421 2020-03-02 13:49:55.160 [restartedMain] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.att.retain.bill.model.RequestTransaction:createdDttm]
+2421 2020-03-02 13:49:55.160 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for createdDttm
+2421 2020-03-02 13:49:55.160 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - Building property createdDttm
+2421 2020-03-02 13:49:55.160 [restartedMain] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tb_req_tx), mappingColumn=credit_card_account, insertable=true, updatable=true, unique=false}
+2421 2020-03-02 13:49:55.160 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property creditCardAccount with lazy=false
+2421 2020-03-02 13:49:55.160 [restartedMain] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.att.retain.bill.model.RequestTransaction:creditCardAccount]
+2421 2020-03-02 13:49:55.160 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for creditCardAccount
+2421 2020-03-02 13:49:55.160 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - Building property creditCardAccount
+2421 2020-03-02 13:49:55.160 [restartedMain] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tb_req_tx), mappingColumn=credit_card_account_hash, insertable=true, updatable=true, unique=false}
+2421 2020-03-02 13:49:55.160 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property creditCardAccountHash with lazy=false
+2421 2020-03-02 13:49:55.160 [restartedMain] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.att.retain.bill.model.RequestTransaction:creditCardAccountHash]
+2421 2020-03-02 13:49:55.160 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for creditCardAccountHash
+2421 2020-03-02 13:49:55.160 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - Building property creditCardAccountHash
+2421 2020-03-02 13:49:55.160 [restartedMain] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tb_req_tx), mappingColumn=credit_card_account_updated, insertable=true, updatable=true, unique=false}
+2422 2020-03-02 13:49:55.161 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property creditCardAccountUpdated with lazy=false
+2422 2020-03-02 13:49:55.161 [restartedMain] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.att.retain.bill.model.RequestTransaction:creditCardAccountUpdated]
+2422 2020-03-02 13:49:55.161 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for creditCardAccountUpdated
+2422 2020-03-02 13:49:55.161 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - Building property creditCardAccountUpdated
+2422 2020-03-02 13:49:55.161 [restartedMain] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tb_req_tx), mappingColumn=credit_card_expiration_date, insertable=true, updatable=true, unique=false}
+2422 2020-03-02 13:49:55.161 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property creditCardExpirationDate with lazy=false
+2422 2020-03-02 13:49:55.161 [restartedMain] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.att.retain.bill.model.RequestTransaction:creditCardExpirationDate]
+2422 2020-03-02 13:49:55.161 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for creditCardExpirationDate
+2422 2020-03-02 13:49:55.161 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - Building property creditCardExpirationDate
+2422 2020-03-02 13:49:55.161 [restartedMain] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tb_req_tx), mappingColumn=currency, insertable=true, updatable=true, unique=false}
+2422 2020-03-02 13:49:55.161 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property currency with lazy=false
+2422 2020-03-02 13:49:55.161 [restartedMain] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.att.retain.bill.model.RequestTransaction:currency]
+2422 2020-03-02 13:49:55.161 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for currency
+2422 2020-03-02 13:49:55.161 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - Building property currency
+2422 2020-03-02 13:49:55.161 [restartedMain] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tb_req_tx), mappingColumn=customer_id, insertable=true, updatable=true, unique=false}
+2422 2020-03-02 13:49:55.161 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property customerId with lazy=false
+2422 2020-03-02 13:49:55.161 [restartedMain] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.att.retain.bill.model.RequestTransaction:customerId]
+2422 2020-03-02 13:49:55.161 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for customerId
+2422 2020-03-02 13:49:55.161 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - Building property customerId
+2422 2020-03-02 13:49:55.161 [restartedMain] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tb_req_tx), mappingColumn=cvn_code, insertable=true, updatable=true, unique=false}
+2422 2020-03-02 13:49:55.161 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property cvnCode with lazy=false
+2422 2020-03-02 13:49:55.161 [restartedMain] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.att.retain.bill.model.RequestTransaction:cvnCode]
+2423 2020-03-02 13:49:55.162 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for cvnCode
+2423 2020-03-02 13:49:55.162 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - Building property cvnCode
+2423 2020-03-02 13:49:55.162 [restartedMain] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tb_req_tx), mappingColumn=division_number, insertable=true, updatable=true, unique=false}
+2423 2020-03-02 13:49:55.162 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property divisionNumber with lazy=false
+2423 2020-03-02 13:49:55.162 [restartedMain] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.att.retain.bill.model.RequestTransaction:divisionNumber]
+2423 2020-03-02 13:49:55.162 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for divisionNumber
+2423 2020-03-02 13:49:55.162 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - Building property divisionNumber
+2423 2020-03-02 13:49:55.162 [restartedMain] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tb_req_tx), mappingColumn=is_read, insertable=true, updatable=true, unique=false}
+2423 2020-03-02 13:49:55.162 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property isRead with lazy=false
+2423 2020-03-02 13:49:55.162 [restartedMain] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.att.retain.bill.model.RequestTransaction:isRead]
+2423 2020-03-02 13:49:55.162 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for isRead
+2423 2020-03-02 13:49:55.162 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - Building property isRead
+2423 2020-03-02 13:49:55.162 [restartedMain] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tb_req_tx), mappingColumn=name_values, insertable=true, updatable=true, unique=false}
+2423 2020-03-02 13:49:55.162 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property nameValues with lazy=false
+2423 2020-03-02 13:49:55.162 [restartedMain] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.att.retain.bill.model.RequestTransaction:nameValues]
+2423 2020-03-02 13:49:55.162 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for nameValues
+2423 2020-03-02 13:49:55.162 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - Building property nameValues
+2423 2020-03-02 13:49:55.162 [restartedMain] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tb_req_tx), mappingColumn=page_num, insertable=true, updatable=true, unique=false}
+2423 2020-03-02 13:49:55.162 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property pageNum with lazy=false
+2423 2020-03-02 13:49:55.162 [restartedMain] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.att.retain.bill.model.RequestTransaction:pageNum]
+2423 2020-03-02 13:49:55.162 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for pageNum
+2423 2020-03-02 13:49:55.162 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - Building property pageNum
+2423 2020-03-02 13:49:55.162 [restartedMain] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tb_req_tx), mappingColumn=payment_method_id, insertable=true, updatable=true, unique=false}
+2423 2020-03-02 13:49:55.162 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property paymentMethodId with lazy=false
+2424 2020-03-02 13:49:55.163 [restartedMain] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.att.retain.bill.model.RequestTransaction:paymentMethodId]
+2424 2020-03-02 13:49:55.163 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for paymentMethodId
+2424 2020-03-02 13:49:55.163 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - Building property paymentMethodId
+2424 2020-03-02 13:49:55.163 [restartedMain] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tb_req_tx), mappingColumn=payment_method_is_tokenized, insertable=true, updatable=true, unique=false}
+2424 2020-03-02 13:49:55.163 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property paymentMethodIsTokenized with lazy=false
+2424 2020-03-02 13:49:55.163 [restartedMain] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.att.retain.bill.model.RequestTransaction:paymentMethodIsTokenized]
+2424 2020-03-02 13:49:55.163 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for paymentMethodIsTokenized
+2424 2020-03-02 13:49:55.163 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - Building property paymentMethodIsTokenized
+2424 2020-03-02 13:49:55.163 [restartedMain] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tb_req_tx), mappingColumn=previous_billing_count, insertable=true, updatable=true, unique=false}
+2424 2020-03-02 13:49:55.163 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property previousBillingCount with lazy=false
+2424 2020-03-02 13:49:55.163 [restartedMain] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.att.retain.bill.model.RequestTransaction:previousBillingCount]
+2424 2020-03-02 13:49:55.163 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for previousBillingCount
+2424 2020-03-02 13:49:55.163 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - Building property previousBillingCount
+2424 2020-03-02 13:49:55.163 [restartedMain] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tb_req_tx), mappingColumn=previous_billing_date, insertable=true, updatable=true, unique=false}
+2424 2020-03-02 13:49:55.163 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property previousBillingDate with lazy=false
+2424 2020-03-02 13:49:55.163 [restartedMain] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.att.retain.bill.model.RequestTransaction:previousBillingDate]
+2424 2020-03-02 13:49:55.163 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for previousBillingDate
+2424 2020-03-02 13:49:55.163 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - Building property previousBillingDate
+2424 2020-03-02 13:49:55.163 [restartedMain] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tb_req_tx), mappingColumn=read_dttm, insertable=true, updatable=true, unique=false}
+2424 2020-03-02 13:49:55.163 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property readDttm with lazy=false
+2424 2020-03-02 13:49:55.163 [restartedMain] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.att.retain.bill.model.RequestTransaction:readDttm]
+2424 2020-03-02 13:49:55.163 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for readDttm
+2424 2020-03-02 13:49:55.163 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - Building property readDttm
+2424 2020-03-02 13:49:55.163 [restartedMain] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tb_req_tx), mappingColumn=return_code, insertable=true, updatable=true, unique=false}
+2424 2020-03-02 13:49:55.163 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property returnCode with lazy=false
+2425 2020-03-02 13:49:55.164 [restartedMain] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.att.retain.bill.model.RequestTransaction:returnCode]
+2425 2020-03-02 13:49:55.164 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for returnCode
+2425 2020-03-02 13:49:55.164 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - Building property returnCode
+2425 2020-03-02 13:49:55.164 [restartedMain] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tb_req_tx), mappingColumn=return_msg, insertable=true, updatable=true, unique=false}
+2425 2020-03-02 13:49:55.164 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property returnMsg with lazy=false
+2425 2020-03-02 13:49:55.164 [restartedMain] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.att.retain.bill.model.RequestTransaction:returnMsg]
+2425 2020-03-02 13:49:55.164 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for returnMsg
+2425 2020-03-02 13:49:55.164 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - Building property returnMsg
+2425 2020-03-02 13:49:55.164 [restartedMain] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tb_req_tx), mappingColumn=select_refund_id, insertable=true, updatable=true, unique=false}
+2425 2020-03-02 13:49:55.164 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property selectRefundId with lazy=false
+2425 2020-03-02 13:49:55.164 [restartedMain] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.att.retain.bill.model.RequestTransaction:selectRefundId]
+2425 2020-03-02 13:49:55.164 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for selectRefundId
+2425 2020-03-02 13:49:55.164 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - Building property selectRefundId
+2425 2020-03-02 13:49:55.164 [restartedMain] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tb_req_tx), mappingColumn=select_transaction_id, insertable=true, updatable=true, unique=false}
+2425 2020-03-02 13:49:55.164 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property selectTransactionId with lazy=false
+2425 2020-03-02 13:49:55.164 [restartedMain] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.att.retain.bill.model.RequestTransaction:selectTransactionId]
+2425 2020-03-02 13:49:55.164 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for selectTransactionId
+2425 2020-03-02 13:49:55.164 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - Building property selectTransactionId
+2425 2020-03-02 13:49:55.164 [restartedMain] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tb_req_tx), mappingColumn=status, insertable=true, updatable=true, unique=false}
+2425 2020-03-02 13:49:55.164 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property status with lazy=false
+2425 2020-03-02 13:49:55.164 [restartedMain] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.att.retain.bill.model.RequestTransaction:status]
+2425 2020-03-02 13:49:55.164 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for status
+2425 2020-03-02 13:49:55.164 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - Building property status
+2425 2020-03-02 13:49:55.164 [restartedMain] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tb_req_tx), mappingColumn=subscription_id, insertable=true, updatable=true, unique=false}
+2425 2020-03-02 13:49:55.164 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property subscriptionId with lazy=false
+2425 2020-03-02 13:49:55.164 [restartedMain] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.att.retain.bill.model.RequestTransaction:subscriptionId]
+2426 2020-03-02 13:49:55.165 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for subscriptionId
+2426 2020-03-02 13:49:55.165 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - Building property subscriptionId
+2426 2020-03-02 13:49:55.165 [restartedMain] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tb_req_tx), mappingColumn=subscription_start_date, insertable=true, updatable=true, unique=false}
+2426 2020-03-02 13:49:55.165 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property subscriptionStartDate with lazy=false
+2426 2020-03-02 13:49:55.165 [restartedMain] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.att.retain.bill.model.RequestTransaction:subscriptionStartDate]
+2426 2020-03-02 13:49:55.165 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for subscriptionStartDate
+2426 2020-03-02 13:49:55.165 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - Building property subscriptionStartDate
+2426 2020-03-02 13:49:55.165 [restartedMain] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tb_req_tx), mappingColumn=timestamp, insertable=true, updatable=true, unique=false}
+2426 2020-03-02 13:49:55.165 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property timestamp with lazy=false
+2426 2020-03-02 13:49:55.165 [restartedMain] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.att.retain.bill.model.RequestTransaction:timestamp]
+2426 2020-03-02 13:49:55.165 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for timestamp
+2426 2020-03-02 13:49:55.165 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - Building property timestamp
+2426 2020-03-02 13:49:55.165 [restartedMain] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tb_req_tx), mappingColumn=vid, insertable=true, updatable=true, unique=false}
+2426 2020-03-02 13:49:55.165 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property vid with lazy=false
+2426 2020-03-02 13:49:55.165 [restartedMain] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.att.retain.bill.model.RequestTransaction:vid]
+2426 2020-03-02 13:49:55.165 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for vid
+2426 2020-03-02 13:49:55.165 [restartedMain] DEBUG o.h.cfg.annotations.PropertyBinder - Building property vid
+2427 2020-03-02 13:49:55.166 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for pageNum
+2427 2020-03-02 13:49:55.166 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for reqDate
+2427 2020-03-02 13:49:55.166 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for reqOrdNum
+2427 2020-03-02 13:49:55.166 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for pageNum
+2427 2020-03-02 13:49:55.166 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for reqDate
+2427 2020-03-02 13:49:55.166 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for reqOrdNum
+2427 2020-03-02 13:49:55.166 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for createdDttm
+2428 2020-03-02 13:49:55.167 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for msg
+2428 2020-03-02 13:49:55.167 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for soapId
+2428 2020-03-02 13:49:55.167 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for status
+2428 2020-03-02 13:49:55.167 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for submitDttm
+2428 2020-03-02 13:49:55.167 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for reqDate
+2428 2020-03-02 13:49:55.167 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for reqOrdNum
+2428 2020-03-02 13:49:55.167 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for reqDate
+2428 2020-03-02 13:49:55.167 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for reqOrdNum
+2428 2020-03-02 13:49:55.167 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for createdDttm
+2428 2020-03-02 13:49:55.167 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for endTimeProc
+2428 2020-03-02 13:49:55.167 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for pageSize
+2428 2020-03-02 13:49:55.167 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for retryTimes
+2428 2020-03-02 13:49:55.167 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for retryWaitMsec
+2428 2020-03-02 13:49:55.167 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for startTimeProc
+2428 2020-03-02 13:49:55.167 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for submissionFailues
+2428 2020-03-02 13:49:55.167 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for submitTransactions
+2428 2020-03-02 13:49:55.167 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for threadCount
+2428 2020-03-02 13:49:55.167 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for merchantTransactionId
+2428 2020-03-02 13:49:55.167 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for reqDate
+2428 2020-03-02 13:49:55.167 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for reqOrdNum
+2428 2020-03-02 13:49:55.167 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for merchantTransactionId
+2428 2020-03-02 13:49:55.167 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for reqDate
+2428 2020-03-02 13:49:55.167 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for reqOrdNum
+2428 2020-03-02 13:49:55.167 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for accountHolderName
+2428 2020-03-02 13:49:55.167 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for affiliateId
+2428 2020-03-02 13:49:55.167 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for affiliateSubId
+2428 2020-03-02 13:49:55.167 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for amount
+2428 2020-03-02 13:49:55.167 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for authCode
+2428 2020-03-02 13:49:55.167 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for avsCode
+2428 2020-03-02 13:49:55.167 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for billingAddressCity
+2428 2020-03-02 13:49:55.167 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for billingAddressCountry
+2428 2020-03-02 13:49:55.167 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for billingAddressCounty
+2428 2020-03-02 13:49:55.167 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for billingAddressDistrict
+2428 2020-03-02 13:49:55.167 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for billingAddressLine1
+2428 2020-03-02 13:49:55.167 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for billingAddressLine2
+2428 2020-03-02 13:49:55.167 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for billingAddressLine3
+2428 2020-03-02 13:49:55.167 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for billingAddressPostalcode
+2428 2020-03-02 13:49:55.167 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for billingFrequency
+2428 2020-03-02 13:49:55.167 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for billingStatementIdentifier
+2428 2020-03-02 13:49:55.167 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for createdDttm
+2428 2020-03-02 13:49:55.167 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for creditCardAccount
+2428 2020-03-02 13:49:55.167 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for creditCardAccountHash
+2428 2020-03-02 13:49:55.167 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for creditCardAccountUpdated
+2429 2020-03-02 13:49:55.168 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for creditCardExpirationDate
+2429 2020-03-02 13:49:55.168 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for currency
+2429 2020-03-02 13:49:55.168 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for customerId
+2429 2020-03-02 13:49:55.168 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for cvnCode
+2429 2020-03-02 13:49:55.168 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for divisionNumber
+2429 2020-03-02 13:49:55.168 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for isRead
+2429 2020-03-02 13:49:55.168 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for nameValues
+2429 2020-03-02 13:49:55.168 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for pageNum
+2429 2020-03-02 13:49:55.168 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for paymentMethodId
+2429 2020-03-02 13:49:55.168 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for paymentMethodIsTokenized
+2429 2020-03-02 13:49:55.168 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for previousBillingCount
+2429 2020-03-02 13:49:55.168 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for previousBillingDate
+2429 2020-03-02 13:49:55.168 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for readDttm
+2429 2020-03-02 13:49:55.168 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for returnCode
+2429 2020-03-02 13:49:55.168 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for returnMsg
+2429 2020-03-02 13:49:55.168 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for selectRefundId
+2429 2020-03-02 13:49:55.168 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for selectTransactionId
+2429 2020-03-02 13:49:55.168 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for status
+2429 2020-03-02 13:49:55.168 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for subscriptionId
+2429 2020-03-02 13:49:55.168 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for subscriptionStartDate
+2429 2020-03-02 13:49:55.168 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for timestamp
+2429 2020-03-02 13:49:55.168 [restartedMain] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for vid
+2432 2020-03-02 13:49:55.171 [restartedMain] DEBUG org.hibernate.mapping.PrimaryKey - Forcing column [page_num] to be non-null as it is part of the primary key for table [tb_req_comm]
+2432 2020-03-02 13:49:55.171 [restartedMain] DEBUG org.hibernate.mapping.PrimaryKey - Forcing column [req_date] to be non-null as it is part of the primary key for table [tb_req_comm]
+2432 2020-03-02 13:49:55.171 [restartedMain] DEBUG org.hibernate.mapping.PrimaryKey - Forcing column [req_ord_num] to be non-null as it is part of the primary key for table [tb_req_comm]
+2432 2020-03-02 13:49:55.171 [restartedMain] DEBUG org.hibernate.mapping.PrimaryKey - Forcing column [req_date] to be non-null as it is part of the primary key for table [tb_req_stat]
+2432 2020-03-02 13:49:55.171 [restartedMain] DEBUG org.hibernate.mapping.PrimaryKey - Forcing column [req_ord_num] to be non-null as it is part of the primary key for table [tb_req_stat]
+2433 2020-03-02 13:49:55.172 [restartedMain] DEBUG org.hibernate.mapping.PrimaryKey - Forcing column [merchant_transaction_id] to be non-null as it is part of the primary key for table [tb_req_tx]
+2433 2020-03-02 13:49:55.172 [restartedMain] DEBUG org.hibernate.mapping.PrimaryKey - Forcing column [req_date] to be non-null as it is part of the primary key for table [tb_req_tx]
+2433 2020-03-02 13:49:55.172 [restartedMain] DEBUG org.hibernate.mapping.PrimaryKey - Forcing column [req_ord_num] to be non-null as it is part of the primary key for table [tb_req_tx]
+2434 2020-03-02 13:49:55.173 [restartedMain] DEBUG o.h.b.i.ClassLoaderAccessImpl - Not known whether passed class name [com.att.retain.bill.model.RequestTransaction] is safe
+2434 2020-03-02 13:49:55.173 [restartedMain] DEBUG o.h.b.i.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.att.retain.bill.model.RequestTransaction
+2435 2020-03-02 13:49:55.174 [restartedMain] DEBUG o.h.b.i.ClassLoaderAccessImpl - Not known whether passed class name [com.att.retain.bill.model.RequestCommunication] is safe
+2435 2020-03-02 13:49:55.174 [restartedMain] DEBUG o.h.b.i.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.att.retain.bill.model.RequestCommunication
+2435 2020-03-02 13:49:55.174 [restartedMain] DEBUG o.h.b.i.ClassLoaderAccessImpl - Not known whether passed class name [com.att.retain.bill.model.RequestStatistics] is safe
+2435 2020-03-02 13:49:55.174 [restartedMain] DEBUG o.h.b.i.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.att.retain.bill.model.RequestStatistics
+2471 2020-03-02 13:49:55.210 [restartedMain] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.att.retain.bill.model.RequestTransactionId
+2471 2020-03-02 13:49:55.210 [restartedMain] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.att.retain.bill.model.RequestTransactionId
+2473 2020-03-02 13:49:55.212 [restartedMain] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Composite-id class must implement Serializable: com.att.retain.bill.model.RequestTransactionId
+2474 2020-03-02 13:49:55.213 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2474 2020-03-02 13:49:55.213 [restartedMain] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Before shutdown stats (total=10, active=0, idle=10, waiting=0)
+2475 2020-03-02 13:49:55.214 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@7d0a18c0: (connection evicted)
+2479 2020-03-02 13:49:55.218 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@21a67b82: (connection evicted)
+2481 2020-03-02 13:49:55.220 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@51317556: (connection evicted)
+2485 2020-03-02 13:49:55.224 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@b48ef6: (connection evicted)
+2487 2020-03-02 13:49:55.226 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@52c2b2fb: (connection evicted)
+2490 2020-03-02 13:49:55.229 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@4faf2f3: (connection evicted)
+2493 2020-03-02 13:49:55.232 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@54970ac8: (connection evicted)
+2496 2020-03-02 13:49:55.235 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@4fa59b33: (connection evicted)
+2498 2020-03-02 13:49:55.237 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@190ed437: (connection evicted)
+2500 2020-03-02 13:49:55.239 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@3a33066d: (connection evicted)
+2502 2020-03-02 13:49:55.241 [restartedMain] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+2503 2020-03-02 13:49:55.242 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2506 2020-03-02 13:49:55.245 [restartedMain] DEBUG o.s.boot.devtools.restart.Restarter - Creating new Restarter for thread Thread[main,5,main]
+2507 2020-03-02 13:49:55.246 [restartedMain] DEBUG o.s.boot.devtools.restart.Restarter - Immediately restarting application
+2507 2020-03-02 13:49:55.246 [restartedMain] DEBUG o.s.boot.devtools.restart.Restarter - Created RestartClassLoader org.springframework.boot.devtools.restart.classloader.RestartClassLoader@7500aeeb
+2507 2020-03-02 13:49:55.246 [restartedMain] DEBUG o.s.boot.devtools.restart.Restarter - Starting application com.att.retain.bill.SEL001BillSelect with URLs [file:/Users/ghangses/dev/workspace/att/bill/target/classes/]
+2507 2020-03-02 13:49:55.246 [restartedMain] DEBUG o.s.b.c.l.ClasspathLoggingApplicationListener - Application failed to start with classpath: [file:/Users/ghangses/dev/workspace/att/bill/target/classes/]
+2516 2020-03-02 13:49:55.255 [restartedMain] DEBUG o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+
+============================
+CONDITIONS EVALUATION REPORT
+============================
+
+
+Positive matches:
+-----------------
+
+   AopAutoConfiguration matched:
+      - @ConditionalOnProperty (spring.aop.auto=true) matched (OnPropertyCondition)
+
+   AopAutoConfiguration.AspectJAutoProxyingConfiguration matched:
+      - @ConditionalOnClass found required class 'org.aspectj.weaver.Advice' (OnClassCondition)
+
+   AopAutoConfiguration.AspectJAutoProxyingConfiguration.CglibAutoProxyConfiguration matched:
+      - @ConditionalOnProperty (spring.aop.proxy-target-class=true) matched (OnPropertyCondition)
+
+   DataSourceAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'javax.sql.DataSource', 'org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType' (OnClassCondition)
+
+   DataSourceAutoConfiguration.PooledDataSourceConfiguration matched:
+      - AnyNestedCondition 1 matched 1 did not; NestedCondition on DataSourceAutoConfiguration.PooledDataSourceCondition.PooledDataSourceAvailable PooledDataSource found supported DataSource; NestedCondition on DataSourceAutoConfiguration.PooledDataSourceCondition.ExplicitType @ConditionalOnProperty (spring.datasource.type) did not find property 'type' (DataSourceAutoConfiguration.PooledDataSourceCondition)
+      - @ConditionalOnBean (types: javax.sql.DataSource,javax.sql.XADataSource; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   DataSourceConfiguration.Hikari matched:
+      - @ConditionalOnClass found required class 'com.zaxxer.hikari.HikariDataSource' (OnClassCondition)
+      - @ConditionalOnProperty (spring.datasource.type=com.zaxxer.hikari.HikariDataSource) matched (OnPropertyCondition)
+      - @ConditionalOnBean (types: javax.sql.DataSource; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   DataSourceJmxConfiguration matched:
+      - @ConditionalOnProperty (spring.jmx.enabled=true) matched (OnPropertyCondition)
+
+   DataSourceJmxConfiguration.Hikari matched:
+      - @ConditionalOnClass found required class 'com.zaxxer.hikari.HikariDataSource' (OnClassCondition)
+      - @ConditionalOnBean (types: javax.sql.DataSource; SearchStrategy: all) found a primary bean from beans 'dataSource' (OnBeanCondition)
+
+   DataSourcePoolMetadataProvidersConfiguration.HikariPoolDataSourceMetadataProviderConfiguration matched:
+      - @ConditionalOnClass found required class 'com.zaxxer.hikari.HikariDataSource' (OnClassCondition)
+
+   DataSourceTransactionManagerAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'org.springframework.jdbc.core.JdbcTemplate', 'org.springframework.transaction.PlatformTransactionManager' (OnClassCondition)
+
+   DataSourceTransactionManagerAutoConfiguration.DataSourceTransactionManagerConfiguration matched:
+      - @ConditionalOnBean (types: javax.sql.DataSource; SearchStrategy: all) found a primary bean from beans 'dataSource' (OnBeanCondition)
+
+   DevToolsDataSourceAutoConfiguration matched:
+      - Devtools devtools enabled. (OnEnabledDevToolsCondition)
+      - DevTools DataSource Condition found auto-configured DataSource (DevToolsDataSourceAutoConfiguration.DevToolsDataSourceCondition)
+
+   DevToolsDataSourceAutoConfiguration.DatabaseShutdownExecutorEntityManagerFactoryDependsOnPostProcessor matched:
+      - @ConditionalOnClass found required class 'org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean' (OnClassCondition)
+      - @ConditionalOnBean (types: org.springframework.orm.jpa.AbstractEntityManagerFactoryBean; SearchStrategy: all) found bean '&entityManagerFactory' (OnBeanCondition)
+
+   GenericCacheConfiguration matched:
+      - Cache org.springframework.boot.autoconfigure.cache.GenericCacheConfiguration automatic cache type (CacheCondition)
+
+   HibernateJpaAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean', 'javax.persistence.EntityManager', 'org.hibernate.engine.spi.SessionImplementor' (OnClassCondition)
+
+   HibernateJpaConfiguration matched:
+      - @ConditionalOnBean (types: javax.sql.DataSource; SearchStrategy: all) found a primary bean from beans 'dataSource' (OnBeanCondition)
+
+   JdbcTemplateAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'javax.sql.DataSource', 'org.springframework.jdbc.core.JdbcTemplate' (OnClassCondition)
+      - @ConditionalOnBean (types: javax.sql.DataSource; SearchStrategy: all) found a primary bean from beans 'dataSource' (OnBeanCondition)
+
+   JdbcTemplateConfiguration matched:
+      - @ConditionalOnBean (types: org.springframework.jdbc.core.JdbcOperations; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JmxAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.jmx.export.MBeanExporter' (OnClassCondition)
+      - @ConditionalOnProperty (spring.jmx.enabled=true) matched (OnPropertyCondition)
+
+   JmxAutoConfiguration#mbeanExporter matched:
+      - @ConditionalOnBean (types: org.springframework.jmx.export.MBeanExporter; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   JmxAutoConfiguration#mbeanServer matched:
+      - @ConditionalOnBean (types: javax.management.MBeanServer; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JmxAutoConfiguration#objectNamingStrategy matched:
+      - @ConditionalOnBean (types: org.springframework.jmx.export.naming.ObjectNamingStrategy; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   JpaBaseConfiguration#entityManagerFactory matched:
+      - @ConditionalOnBean (types: org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean,javax.persistence.EntityManagerFactory; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JpaBaseConfiguration#entityManagerFactoryBuilder matched:
+      - @ConditionalOnBean (types: org.springframework.boot.orm.jpa.EntityManagerFactoryBuilder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JpaBaseConfiguration#jpaVendorAdapter matched:
+      - @ConditionalOnBean (types: org.springframework.orm.jpa.JpaVendorAdapter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JpaBaseConfiguration#transactionManager matched:
+      - @ConditionalOnBean (types: org.springframework.transaction.PlatformTransactionManager; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JpaRepositoriesAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.data.jpa.repository.JpaRepository' (OnClassCondition)
+      - @ConditionalOnProperty (spring.data.jpa.repositories.enabled=true) matched (OnPropertyCondition)
+      - @ConditionalOnBean (types: javax.sql.DataSource; SearchStrategy: all) found bean 'dataSource'; @ConditionalOnBean (types: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean,org.springframework.data.jpa.repository.config.JpaRepositoryConfigExtension; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JtaAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'javax.transaction.Transaction' (OnClassCondition)
+      - @ConditionalOnProperty (spring.jta.enabled) matched (OnPropertyCondition)
+
+   LocalDevToolsAutoConfiguration matched:
+      - Initialized Restarter Condition available and initialized (OnInitializedRestarterCondition)
+
+   LocalDevToolsAutoConfiguration.LiveReloadConfiguration matched:
+      - @ConditionalOnProperty (spring.devtools.livereload.enabled) matched (OnPropertyCondition)
+
+   LocalDevToolsAutoConfiguration.LiveReloadConfiguration#liveReloadServer matched:
+      - @ConditionalOnBean (types: org.springframework.boot.devtools.livereload.LiveReloadServer; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   LocalDevToolsAutoConfiguration.RestartConfiguration matched:
+      - @ConditionalOnProperty (spring.devtools.restart.enabled) matched (OnPropertyCondition)
+
+   LocalDevToolsAutoConfiguration.RestartConfiguration#classPathFileSystemWatcher matched:
+      - @ConditionalOnBean (types: org.springframework.boot.devtools.classpath.ClassPathFileSystemWatcher; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   LocalDevToolsAutoConfiguration.RestartConfiguration#classPathRestartStrategy matched:
+      - @ConditionalOnBean (types: org.springframework.boot.devtools.classpath.ClassPathRestartStrategy; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   LocalDevToolsAutoConfiguration.RestartConfiguration#conditionEvaluationDeltaLoggingListener matched:
+      - @ConditionalOnProperty (spring.devtools.restart.log-condition-evaluation-delta) matched (OnPropertyCondition)
+
+   NamedParameterJdbcTemplateConfiguration matched:
+      - @ConditionalOnBean (types: org.springframework.jdbc.core.JdbcTemplate; SearchStrategy: all) found a primary bean from beans 'jdbcTemplate'; @ConditionalOnBean (types: org.springframework.jdbc.core.namedparam.NamedParameterJdbcOperations; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   NoOpCacheConfiguration matched:
+      - Cache org.springframework.boot.autoconfigure.cache.NoOpCacheConfiguration automatic cache type (CacheCondition)
+
+   PersistenceExceptionTranslationAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor' (OnClassCondition)
+
+   PersistenceExceptionTranslationAutoConfiguration#persistenceExceptionTranslationPostProcessor matched:
+      - @ConditionalOnProperty (spring.dao.exceptiontranslation.enabled) matched (OnPropertyCondition)
+      - @ConditionalOnBean (types: org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   PropertyPlaceholderAutoConfiguration#propertySourcesPlaceholderConfigurer matched:
+      - @ConditionalOnBean (types: org.springframework.context.support.PropertySourcesPlaceholderConfigurer; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   SimpleCacheConfiguration matched:
+      - Cache org.springframework.boot.autoconfigure.cache.SimpleCacheConfiguration automatic cache type (CacheCondition)
+
+   SpringApplicationAdminJmxAutoConfiguration matched:
+      - @ConditionalOnProperty (spring.application.admin.enabled=true) matched (OnPropertyCondition)
+
+   SpringApplicationAdminJmxAutoConfiguration#springApplicationAdminRegistrar matched:
+      - @ConditionalOnBean (types: org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   TaskExecutionAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor' (OnClassCondition)
+
+   TaskExecutionAutoConfiguration#applicationTaskExecutor matched:
+      - @ConditionalOnBean (types: java.util.concurrent.Executor; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   TaskExecutionAutoConfiguration#taskExecutorBuilder matched:
+      - @ConditionalOnBean (types: org.springframework.boot.task.TaskExecutorBuilder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   TaskSchedulingAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler' (OnClassCondition)
+
+   TaskSchedulingAutoConfiguration#taskSchedulerBuilder matched:
+      - @ConditionalOnBean (types: org.springframework.boot.task.TaskSchedulerBuilder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   TransactionAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.transaction.PlatformTransactionManager' (OnClassCondition)
+
+   TransactionAutoConfiguration#platformTransactionManagerCustomizers matched:
+      - @ConditionalOnBean (types: org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizers; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   TransactionAutoConfiguration.EnableTransactionManagementConfiguration matched:
+      - @ConditionalOnBean (types: org.springframework.transaction.TransactionManager; SearchStrategy: all) found bean 'transactionManager'; @ConditionalOnBean (types: org.springframework.transaction.annotation.AbstractTransactionManagementConfiguration; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   TransactionAutoConfiguration.EnableTransactionManagementConfiguration.CglibAutoProxyConfiguration matched:
+      - @ConditionalOnProperty (spring.aop.proxy-target-class=true) matched (OnPropertyCondition)
+
+   TransactionAutoConfiguration.TransactionTemplateConfiguration matched:
+      - @ConditionalOnBean (types: org.springframework.transaction.PlatformTransactionManager; SearchStrategy: all) found a primary bean from beans 'transactionManager' (OnBeanCondition)
+
+   TransactionAutoConfiguration.TransactionTemplateConfiguration#transactionTemplate matched:
+      - @ConditionalOnBean (types: org.springframework.transaction.support.TransactionOperations; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+   ActiveMQAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'javax.jms.ConnectionFactory' (OnClassCondition)
+
+   AopAutoConfiguration.AspectJAutoProxyingConfiguration.JdkDynamicAutoProxyConfiguration:
+      Did not match:
+         - @ConditionalOnProperty (spring.aop.proxy-target-class=false) did not find property 'proxy-target-class' (OnPropertyCondition)
+
+   AopAutoConfiguration.ClassProxyingConfiguration:
+      Did not match:
+         - @ConditionalOnMissingClass found unwanted class 'org.aspectj.weaver.Advice' (OnClassCondition)
+
+   ArtemisAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'javax.jms.ConnectionFactory' (OnClassCondition)
+
+   AtomikosJtaConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.atomikos.icatch.jta.UserTransactionManager' (OnClassCondition)
+
+   BatchAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.batch.core.launch.JobLauncher' (OnClassCondition)
+
+   BitronixJtaConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'bitronix.tm.jndi.BitronixContext' (OnClassCondition)
+
+   CacheAutoConfiguration:
+      Did not match:
+         - @ConditionalOnBean (types: org.springframework.cache.interceptor.CacheAspectSupport; SearchStrategy: all) did not find any beans of type org.springframework.cache.interceptor.CacheAspectSupport (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.cache.CacheManager' (OnClassCondition)
+
+   CacheAutoConfiguration.CacheManagerEntityManagerFactoryDependsOnPostProcessor:
+      Did not match:
+         - Ancestor org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration did not match (ConditionEvaluationReport.AncestorsMatchedCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean' (OnClassCondition)
+
+   CaffeineCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'com.github.benmanes.caffeine.cache.Caffeine', 'org.springframework.cache.caffeine.CaffeineCacheManager' (OnClassCondition)
+
+   CassandraAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.datastax.driver.core.Cluster' (OnClassCondition)
+
+   CassandraDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.datastax.driver.core.Cluster' (OnClassCondition)
+
+   CassandraReactiveDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.datastax.driver.core.Cluster' (OnClassCondition)
+
+   CassandraReactiveRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.cassandra.ReactiveSession' (OnClassCondition)
+
+   CassandraRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.datastax.driver.core.Session' (OnClassCondition)
+
+   ClientHttpConnectorAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.reactive.function.client.WebClient' (OnClassCondition)
+
+   CloudServiceConnectorsAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.cloud.config.java.CloudScanConfiguration' (OnClassCondition)
+
+   CodecsAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.http.codec.CodecConfigurer' (OnClassCondition)
+
+   CouchbaseAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.couchbase.client.java.Cluster' (OnClassCondition)
+
+   CouchbaseCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'com.couchbase.client.java.Bucket', 'com.couchbase.client.spring.cache.CouchbaseCacheManager' (OnClassCondition)
+
+   CouchbaseDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.couchbase.client.java.Bucket' (OnClassCondition)
+
+   CouchbaseReactiveDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.couchbase.client.java.Bucket' (OnClassCondition)
+
+   CouchbaseReactiveRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.couchbase.client.java.Bucket' (OnClassCondition)
+
+   CouchbaseRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.couchbase.client.java.Bucket' (OnClassCondition)
+
+   DataSourceAutoConfiguration.EmbeddedDatabaseConfiguration:
+      Did not match:
+         - EmbeddedDataSource found supported pooled data source (DataSourceAutoConfiguration.EmbeddedDatabaseCondition)
+
+   DataSourceConfiguration.Dbcp2:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.apache.commons.dbcp2.BasicDataSource' (OnClassCondition)
+
+   DataSourceConfiguration.Generic:
+      Did not match:
+         - @ConditionalOnProperty (spring.datasource.type) did not find property 'spring.datasource.type' (OnPropertyCondition)
+
+   DataSourceConfiguration.Tomcat:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.apache.tomcat.jdbc.pool.DataSource' (OnClassCondition)
+
+   DataSourceJmxConfiguration.TomcatDataSourceJmxConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.apache.tomcat.jdbc.pool.DataSourceProxy' (OnClassCondition)
+
+   DataSourcePoolMetadataProvidersConfiguration.CommonsDbcp2PoolDataSourceMetadataProviderConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.apache.commons.dbcp2.BasicDataSource' (OnClassCondition)
+
+   DataSourcePoolMetadataProvidersConfiguration.TomcatDataSourcePoolMetadataProviderConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.apache.tomcat.jdbc.pool.DataSource' (OnClassCondition)
+
+   DataSourceTransactionManagerAutoConfiguration.DataSourceTransactionManagerConfiguration#transactionManager:
+      Did not match:
+         - @ConditionalOnBean (types: org.springframework.transaction.PlatformTransactionManager; SearchStrategy: all) found beans of type 'org.springframework.transaction.PlatformTransactionManager' transactionManager (OnBeanCondition)
+
+   DispatcherServletAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.servlet.DispatcherServlet' (OnClassCondition)
+
+   EhCacheCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'net.sf.ehcache.Cache', 'org.springframework.cache.ehcache.EhCacheCacheManager' (OnClassCondition)
+
+   ElasticsearchAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.elasticsearch.client.Client' (OnClassCondition)
+
+   ElasticsearchDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.elasticsearch.core.ElasticsearchTemplate' (OnClassCondition)
+
+   ElasticsearchRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.elasticsearch.client.Client' (OnClassCondition)
+
+   EmbeddedLdapAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.unboundid.ldap.listener.InMemoryDirectoryServer' (OnClassCondition)
+
+   EmbeddedMongoAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.mongodb.MongoClient' (OnClassCondition)
+
+   EmbeddedWebServerFactoryCustomizerAutoConfiguration:
+      Did not match:
+         - @ConditionalOnWebApplication did not find reactive or servlet web application classes (OnWebApplicationCondition)
+
+   ErrorMvcAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.servlet.DispatcherServlet' (OnClassCondition)
+
+   ErrorWebFluxAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.reactive.config.WebFluxConfigurer' (OnClassCondition)
+
+   FlywayAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.flywaydb.core.Flyway' (OnClassCondition)
+
+   FreeMarkerAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'freemarker.template.Configuration' (OnClassCondition)
+
+   GroovyTemplateAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'groovy.text.markup.MarkupTemplateEngine' (OnClassCondition)
+
+   GsonAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.google.gson.Gson' (OnClassCondition)
+
+   H2ConsoleAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.h2.server.web.WebServlet' (OnClassCondition)
+
+   HazelcastAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.hazelcast.core.HazelcastInstance' (OnClassCondition)
+
+   HazelcastCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'com.hazelcast.core.HazelcastInstance', 'com.hazelcast.spring.cache.HazelcastCacheManager' (OnClassCondition)
+
+   HazelcastJpaDependencyAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.hazelcast.core.HazelcastInstance' (OnClassCondition)
+
+   HttpEncodingAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.filter.CharacterEncodingFilter' (OnClassCondition)
+
+   HttpHandlerAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.http.server.reactive.HttpHandler' (OnClassCondition)
+
+   HttpMessageConvertersAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.http.converter.HttpMessageConverter' (OnClassCondition)
+
+   HypermediaAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.hateoas.EntityModel' (OnClassCondition)
+
+   InfinispanCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.infinispan.spring.embedded.provider.SpringEmbeddedCacheManager' (OnClassCondition)
+
+   InfluxDbAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.influxdb.InfluxDB' (OnClassCondition)
+
+   IntegrationAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.integration.config.EnableIntegration' (OnClassCondition)
+
+   JCacheCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'javax.cache.Caching', 'org.springframework.cache.jcache.JCacheCacheManager' (OnClassCondition)
+
+   JacksonAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.fasterxml.jackson.databind.ObjectMapper' (OnClassCondition)
+
+   JdbcRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.jdbc.repository.config.AbstractJdbcConfiguration' (OnClassCondition)
+
+   JerseyAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'javax.servlet.ServletRegistration' (OnClassCondition)
+
+   JestAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'io.searchbox.client.JestClient' (OnClassCondition)
+
+   JmsAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'javax.jms.Message' (OnClassCondition)
+
+   JndiConnectionFactoryAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.jms.core.JmsTemplate' (OnClassCondition)
+
+   JndiDataSourceAutoConfiguration:
+      Did not match:
+         - @ConditionalOnProperty (spring.datasource.jndi-name) did not find property 'jndi-name' (OnPropertyCondition)
+      Matched:
+         - @ConditionalOnClass found required classes 'javax.sql.DataSource', 'org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType' (OnClassCondition)
+
+   JndiJtaConfiguration:
+      Did not match:
+         - @ConditionalOnJndi JNDI environment is not available (OnJndiCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.transaction.jta.JtaTransactionManager' (OnClassCondition)
+
+   JooqAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.jooq.DSLContext' (OnClassCondition)
+
+   JpaBaseConfiguration.JpaWebConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.servlet.config.annotation.WebMvcConfigurer' (OnClassCondition)
+
+   JpaRepositoriesAutoConfiguration#entityManagerFactoryBootstrapExecutorCustomizer:
+      Did not match:
+         - AnyNestedCondition 0 matched 2 did not; NestedCondition on JpaRepositoriesAutoConfiguration.BootstrapExecutorCondition.LazyBootstrapMode @ConditionalOnProperty (spring.data.jpa.repositories.bootstrap-mode=lazy) did not find property 'bootstrap-mode'; NestedCondition on JpaRepositoriesAutoConfiguration.BootstrapExecutorCondition.DeferredBootstrapMode @ConditionalOnProperty (spring.data.jpa.repositories.bootstrap-mode=deferred) did not find property 'bootstrap-mode' (JpaRepositoriesAutoConfiguration.BootstrapExecutorCondition)
+
+   JsonbAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'javax.json.bind.Jsonb' (OnClassCondition)
+
+   KafkaAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.kafka.core.KafkaTemplate' (OnClassCondition)
+
+   LdapAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.ldap.core.ContextSource' (OnClassCondition)
+
+   LdapRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.ldap.repository.LdapRepository' (OnClassCondition)
+
+   LiquibaseAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'liquibase.change.DatabaseChange' (OnClassCondition)
+
+   MailSenderAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.mail.MailSender' (OnClassCondition)
+
+   MailSenderValidatorAutoConfiguration:
+      Did not match:
+         - @ConditionalOnSingleCandidate did not find required type 'org.springframework.mail.javamail.JavaMailSenderImpl' (OnBeanCondition)
+
+   MessageSourceAutoConfiguration:
+      Did not match:
+         - ResourceBundle did not find bundle with basename messages (MessageSourceAutoConfiguration.ResourceBundleCondition)
+
+   MongoAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.mongodb.MongoClient' (OnClassCondition)
+
+   MongoDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.mongodb.client.MongoClient' (OnClassCondition)
+
+   MongoReactiveAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.mongodb.reactivestreams.client.MongoClient' (OnClassCondition)
+
+   MongoReactiveDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.mongodb.reactivestreams.client.MongoClient' (OnClassCondition)
+
+   MongoReactiveRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.mongodb.reactivestreams.client.MongoClient' (OnClassCondition)
+
+   MongoRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.mongodb.MongoClient' (OnClassCondition)
+
+   MultipartAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'javax.servlet.MultipartConfigElement' (OnClassCondition)
+
+   MustacheAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.samskivert.mustache.Mustache' (OnClassCondition)
+
+   Neo4jDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.neo4j.ogm.session.SessionFactory' (OnClassCondition)
+
+   Neo4jRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.neo4j.ogm.session.Neo4jSession' (OnClassCondition)
+
+   OAuth2ClientAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.security.config.annotation.web.configuration.EnableWebSecurity' (OnClassCondition)
+
+   OAuth2ResourceServerAutoConfiguration:
+      Did not match:
+         - @ConditionalOnWebApplication did not find servlet web application classes (OnWebApplicationCondition)
+
+   ProjectInfoAutoConfiguration#buildProperties:
+      Did not match:
+         - @ConditionalOnResource did not find resource '${spring.info.build.location:classpath:META-INF/build-info.properties}' (OnResourceCondition)
+
+   ProjectInfoAutoConfiguration#gitProperties:
+      Did not match:
+         - GitResource did not find git info at classpath:git.properties (ProjectInfoAutoConfiguration.GitResourceAvailableCondition)
+
+   QuartzAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.quartz.Scheduler' (OnClassCondition)
+
+   RSocketMessagingAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'io.rsocket.RSocketFactory' (OnClassCondition)
+
+   RSocketRequesterAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'io.rsocket.RSocketFactory' (OnClassCondition)
+
+   RSocketSecurityAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.security.rsocket.core.SecuritySocketAcceptorInterceptor' (OnClassCondition)
+
+   RSocketServerAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'io.rsocket.RSocketFactory' (OnClassCondition)
+
+   RSocketStrategiesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'io.netty.buffer.PooledByteBufAllocator' (OnClassCondition)
+
+   RabbitAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.rabbitmq.client.Channel' (OnClassCondition)
+
+   ReactiveElasticsearchRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.elasticsearch.client.reactive.ReactiveElasticsearchClient' (OnClassCondition)
+
+   ReactiveOAuth2ClientAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'reactor.core.publisher.Flux' (OnClassCondition)
+
+   ReactiveOAuth2ResourceServerAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.security.config.annotation.web.reactive.EnableWebFluxSecurity' (OnClassCondition)
+
+   ReactiveRestClientAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'reactor.netty.http.client.HttpClient' (OnClassCondition)
+
+   ReactiveSecurityAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'reactor.core.publisher.Flux' (OnClassCondition)
+
+   ReactiveUserDetailsServiceAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.security.authentication.ReactiveAuthenticationManager' (OnClassCondition)
+
+   ReactiveWebServerFactoryAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.http.ReactiveHttpInputMessage' (OnClassCondition)
+
+   RedisAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.redis.core.RedisOperations' (OnClassCondition)
+
+   RedisCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.redis.connection.RedisConnectionFactory' (OnClassCondition)
+
+   RedisReactiveAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'reactor.core.publisher.Flux' (OnClassCondition)
+
+   RedisRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.redis.repository.configuration.EnableRedisRepositories' (OnClassCondition)
+
+   RemoteDevToolsAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.http.server.ServerHttpRequest' (OnClassCondition)
+
+   RepositoryRestMvcAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.rest.webmvc.config.RepositoryRestMvcConfiguration' (OnClassCondition)
+
+   RestClientAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.elasticsearch.client.RestClient' (OnClassCondition)
+
+   RestTemplateAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.client.RestTemplate' (OnClassCondition)
+
+   Saml2RelyingPartyAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.security.saml2.provider.service.registration.RelyingPartyRegistrationRepository' (OnClassCondition)
+
+   SecurityAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.security.authentication.DefaultAuthenticationEventPublisher' (OnClassCondition)
+
+   SecurityFilterAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.security.config.http.SessionCreationPolicy' (OnClassCondition)
+
+   SendGridAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.sendgrid.SendGrid' (OnClassCondition)
+
+   ServletWebServerFactoryAutoConfiguration:
+      Did not match:
+         - @ConditionalOnWebApplication did not find servlet web application classes (OnWebApplicationCondition)
+
+   SessionAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.session.Session' (OnClassCondition)
+
+   SolrAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.apache.solr.client.solrj.impl.CloudSolrClient' (OnClassCondition)
+
+   SolrRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.apache.solr.client.solrj.SolrClient' (OnClassCondition)
+
+   SpringDataWebAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.web.PageableHandlerMethodArgumentResolver' (OnClassCondition)
+
+   TaskSchedulingAutoConfiguration#taskScheduler:
+      Did not match:
+         - @ConditionalOnBean (names: org.springframework.context.annotation.internalScheduledAnnotationProcessor; SearchStrategy: all) did not find any beans named org.springframework.context.annotation.internalScheduledAnnotationProcessor (OnBeanCondition)
+
+   ThymeleafAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.thymeleaf.spring5.SpringTemplateEngine' (OnClassCondition)
+
+   TransactionAutoConfiguration#transactionalOperator:
+      Did not match:
+         - @ConditionalOnBean (types: org.springframework.transaction.ReactiveTransactionManager; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   TransactionAutoConfiguration.EnableTransactionManagementConfiguration.JdkDynamicAutoProxyConfiguration:
+      Did not match:
+         - @ConditionalOnProperty (spring.aop.proxy-target-class=false) did not find property 'proxy-target-class' (OnPropertyCondition)
+
+   UserDetailsServiceAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.security.authentication.AuthenticationManager' (OnClassCondition)
+
+   ValidationAutoConfiguration:
+      Did not match:
+         - @ConditionalOnResource did not find resource 'classpath:META-INF/services/javax.validation.spi.ValidationProvider' (OnResourceCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'javax.validation.executable.ExecutableValidator' (OnClassCondition)
+
+   WebClientAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.reactive.function.client.WebClient' (OnClassCondition)
+
+   WebFluxAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.reactive.config.WebFluxConfigurer' (OnClassCondition)
+
+   WebMvcAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.servlet.config.annotation.WebMvcConfigurer' (OnClassCondition)
+
+   WebServiceTemplateAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.oxm.Marshaller' (OnClassCondition)
+
+   WebServicesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.ws.transport.http.MessageDispatcherServlet' (OnClassCondition)
+
+   WebSocketMessagingAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.socket.config.annotation.WebSocketMessageBrokerConfigurer' (OnClassCondition)
+
+   WebSocketReactiveAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'javax.websocket.server.ServerContainer' (OnClassCondition)
+
+   WebSocketServletAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'javax.websocket.server.ServerContainer' (OnClassCondition)
+
+   XADataSourceAutoConfiguration:
+      Did not match:
+         - @ConditionalOnBean (types: org.springframework.boot.jdbc.XADataSourceWrapper; SearchStrategy: all) did not find any beans of type org.springframework.boot.jdbc.XADataSourceWrapper (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required classes 'javax.sql.DataSource', 'javax.transaction.TransactionManager', 'org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType' (OnClassCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration
+
+    org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration
+
+    org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration
+
+
+
+2524 2020-03-02 13:49:55.263 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Composite-id class must implement Serializable: com.att.retain.bill.model.RequestTransactionId
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1796)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1108)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.att.retain.bill.SEL001BillSelect.main(SEL001BillSelect.java:79)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Composite-id class must implement Serializable: com.att.retain.bill.model.RequestTransactionId
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:403)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:378)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1792)
+	... 20 common frames omitted
+Caused by: org.hibernate.MappingException: Composite-id class must implement Serializable: com.att.retain.bill.model.RequestTransactionId
+	at org.hibernate.mapping.RootClass.checkCompositeIdentifier(RootClass.java:293)
+	at org.hibernate.mapping.RootClass.validate(RootClass.java:276)
+	at org.hibernate.boot.internal.MetadataImpl.validate(MetadataImpl.java:343)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:461)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1237)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391)
+	... 24 common frames omitted

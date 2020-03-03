@@ -1,5 +1,6 @@
 package com.att.retain.bill.service;
 
+import com.att.retain.bill.model.RequestCommunicationId;
 import com.att.retain.bill.util.BillUtils;
 import com.vindicia.soap.v1_1.selecttypes.Transaction;
 import com.vindicia.soap.v1_1.selecttypes.TransactionStatusType;
@@ -7,13 +8,11 @@ import org.apache.commons.lang3.tuple.ImmutablePair;
 import org.apache.commons.lang3.tuple.Pair;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.core.env.Environment;
+import org.springframework.beans.factory.annotation.Value;
 
 import java.math.BigDecimal;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Iterator;
 import java.util.List;
@@ -21,14 +20,11 @@ import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.stream.Stream;
 
 import static com.att.retain.bill.util.BillUtils.find;
+import static com.att.retain.bill.util.BillUtils.getNow;
 
 public class TransactionFileReader implements ITransactionsReader {
     static Logger log = LoggerFactory.getLogger(TransactionFileReader.class);
 
-    @Autowired
-    private Environment environment;
-
-    private final String ISO_8601_24H_FULL_FORMAT = "yyyy-MM-dd'T'HH:mm:ss.SSS";
     private int iHDR_timestamp;
     private int iHDR_amount;
     private int iHDR_currency;
@@ -52,27 +48,31 @@ public class TransactionFileReader implements ITransactionsReader {
     private int iHDR_cvnCode;
     private int iHDR_paymentMethodIsTokenized;
 
-    private String requestHeader;
-    private String requestPath;
-    private String requestFile;
-
+    @Value("${submit.billTransactions.request_header}")
+    String request_header;
+    @Value("${submit.billTransactions.request_path}")
+    String request_path;
+    @Value("${submit.billTransactions.request_file}")
+    String request_file;
+    @Value("${submit.billTransactions.response_path}")
     private String[] hdrs;
 
-    public TransactionFileReader(String requestHeader, String requestPath, String requestFile) {
-        this.requestHeader = requestHeader;
-        this.requestPath = requestPath;
-        this.requestFile = requestFile;
-
-        hdrs = this.requestHeader.split(",");
+    public TransactionFileReader() {
+        super();
     }
 
     @Override
-    public Pair<Integer, List<Transaction>> getTransaction(int page, int pageSize) {
+    public Pair<RequestCommunicationId, List<Transaction>> getTransaction(int page, int pageSize) {
+
+        RequestCommunicationId requestCommunicationId = new RequestCommunicationId();
+        requestCommunicationId.setReqDate(getNow("YYYYMMDD"));
+        requestCommunicationId.setReqOrdNum(0);
+        requestCommunicationId.setPageNum(page);
 
         List<Transaction> txns = new CopyOnWriteArrayList<>();
 
         String separator = System.getProperty("file.separator");
-        String inputFile = requestPath + separator + requestFile;
+        String inputFile = request_path + separator + request_file;
 
         try (Stream<String> lines = Files.lines(Paths.get(inputFile))) {
 
@@ -85,18 +85,13 @@ public class TransactionFileReader implements ITransactionsReader {
             log.error(e.getMessage());
             e.printStackTrace();
         }
-        return new ImmutablePair<>(page, txns);
+        return new ImmutablePair<>(requestCommunicationId, txns);
     }
 
     private Transaction getTransaction(String[] request) {
+        hdrs = this.request_header.split(",");
+
         Transaction transaction = new Transaction();
-
-        String hdr = "";
-
-        for (int i = 0; i < hdrs.length; i++) {
-            hdr += "hdrs[" + i + "]=" + hdrs[i] + "\n";
-        }
-
         try {
             iHDR_timestamp = find(hdrs, "timestamp");
             iHDR_amount = find(hdrs, "amount");

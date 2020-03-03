@@ -1,5 +1,6 @@
 package com.att.retain.bill.service;
 
+import com.att.retain.bill.model.RequestCommunicationId;
 import com.att.retain.bill.model.RequestTransaction;
 import com.att.retain.bill.repository.RequestTransactionRepository;
 import com.vindicia.soap.v1_1.selecttypes.BillingIntervalType;
@@ -12,30 +13,28 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
-import org.springframework.stereotype.Component;
 
 import java.math.BigDecimal;
-import java.sql.Date;
-import java.time.ZonedDateTime;
 import java.util.List;
 import java.util.stream.Collectors;
 
 import static com.att.retain.bill.util.BillUtils.getCalendar;
+import static com.att.retain.bill.util.BillUtils.getNow;
 import static com.att.retain.bill.util.BillUtils.getSystemInfo;
 
-@Component
 public class TransactionDatabaseReader implements ITransactionsReader {
 
     static Logger log = LoggerFactory.getLogger(TransactionDatabaseReader.class);
 
     @Autowired
-    private RequestTransactionRepository employeeRepository;
+    private RequestTransactionRepository requestTransactionRepository;
 
     @Override
-    public Pair<Integer, List<Transaction>> getTransaction(int page, int pageSize) {
+    public Pair<RequestCommunicationId, List<Transaction>> getTransaction(int page, int pageSize) {
+        RequestCommunicationId requestCommunicationId = new RequestCommunicationId();
 
         Pageable pageable = PageRequest.of(page - 1, pageSize);
-        List<RequestTransaction> txns = employeeRepository.getRequestTransactions(pageable);
+        List<RequestTransaction> txns = requestTransactionRepository.getRequestTransactions(pageable);
 
         List<Transaction> transactions = txns.stream().map(requestTransaction -> {
             Transaction tx = new Transaction();
@@ -98,11 +97,18 @@ public class TransactionDatabaseReader implements ITransactionsReader {
                     Boolean.valueOf(requestTransaction.getCreditCardAccountUpdated()) : false);
 
             requestTransaction.setIsRead("Y");
-            requestTransaction.setReadDttm(Date.from(ZonedDateTime.now().toInstant()));
+            requestTransaction.setReadDttm(getNow("yyyy-MM-dd'T'HH:mm:ss Z"));
 
             return tx;
         }).collect(Collectors.toList());
-        return new ImmutablePair<>(page, transactions);
+        if (txns.size() > 0) {
+            requestTransactionRepository.saveAll(txns);
+            requestCommunicationId.setReqDate(txns.get(0).getReqDate());
+            requestCommunicationId.setReqOrdNum(txns.get(0).getReqOrdNum());
+            requestCommunicationId.setPageNum(page);
+        }
+
+        return new ImmutablePair<>(requestCommunicationId, transactions);
     }
 
 }

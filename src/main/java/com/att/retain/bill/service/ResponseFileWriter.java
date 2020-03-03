@@ -1,5 +1,6 @@
 package com.att.retain.bill.service;
 
+import com.att.retain.bill.model.RequestCommunicationId;
 import com.att.retain.bill.util.BillUtils;
 import com.vindicia.soap.v1_1.select.BillTransactionsResponse;
 import com.vindicia.soap.v1_1.selecttypes.Return;
@@ -9,6 +10,7 @@ import org.apache.commons.lang3.tuple.ImmutablePair;
 import org.apache.commons.lang3.tuple.Pair;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Value;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -27,9 +29,10 @@ public class ResponseFileWriter implements IResponseWriter {
     private static final String FILE_NAME_PREFIX = "SOAP_submit_";
     private static final String SEPARATOR = ",";
 
-    public ResponseFileWriter(String filePath) {
-        Path resultDirectory = Paths.get(filePath);
-        resultPath = Paths.get(filePath + System.getProperty("file.separator")
+    public ResponseFileWriter(String responsePath) {
+        super();
+        Path resultDirectory = Paths.get(responsePath);
+        resultPath = Paths.get(responsePath + System.getProperty("file.separator")
                 + FILE_NAME_PREFIX + BillUtils.getNow("yyyyMMdd_HHmmss") + ".csv");
         String resultFileHeader = "timestamp,SOAP_ID,merchantTransactionId,TVR_CODE,TVR_DESCRIPTION,RETURN_CODE,RETURN_STRING";
         try {
@@ -42,7 +45,7 @@ public class ResponseFileWriter implements IResponseWriter {
     }
 
     @Override
-    public Pair<Integer, Integer> writeSubmitResult(int pageNum, List<Transaction> transactions, BillTransactionsResponse billTransactionsResponse) {
+    public Pair<Integer, Integer> writeSubmitResult(RequestCommunicationId reqCommId, List<Transaction> transactions, BillTransactionsResponse billTransactionsResponse) {
 
         int nSubmittedTransactions = 0, nSubmissionFailures = 0;
         StringBuffer strResultContent = new StringBuffer();
@@ -59,6 +62,7 @@ public class ResponseFileWriter implements IResponseWriter {
                     for (TransactionValidationResponse txValidResponse : response) {
                         strResultContent = new StringBuffer();
                         if (txValidResponse != null) {
+                            nSubmissionFailures++;
                             strResultContent.append(BillUtils.getNow("yyyy-MM-dd'T'HH:mm:ss Z")).append(SEPARATOR);
                             strResultContent.append(soapId).append(SEPARATOR);
                             strResultContent.append(txValidResponse.getMerchantTransactionId()).append(SEPARATOR);
@@ -71,6 +75,7 @@ public class ResponseFileWriter implements IResponseWriter {
                     }
                 } else { // this soap call was successful.
                     for (Transaction transaction : transactions) {
+                        nSubmittedTransactions++;
                         strResultContent = new StringBuffer();
                         strResultContent.append(BillUtils.getNow("yyyy-MM-dd'T'HH:mm:ss Z")).append(SEPARATOR);
                         strResultContent.append(soapId).append(SEPARATOR);
@@ -80,10 +85,10 @@ public class ResponseFileWriter implements IResponseWriter {
                         strResultContent.append(returnCode).append(SEPARATOR);
                         strResultContent.append(returnMsg);
                         writeContent(resultPath, strResultContent.toString(), StandardOpenOption.APPEND);
-                        nSubmittedTransactions++;
                     }
                 }
             } else {
+                nSubmissionFailures += transactions.size();
                 strResultContent.append(BillUtils.getNow("yyyy-MM-dd'T'HH:mm:ss Z")).append(SEPARATOR);
                 strResultContent.append(soapId).append(SEPARATOR);
                 strResultContent.append(SEPARATOR);
@@ -95,12 +100,12 @@ public class ResponseFileWriter implements IResponseWriter {
             }
 
         } else {
-            nSubmissionFailures++;
-            log.error("\n\tPage " + pageNum + " Transactions : [503] Communication Failed (Soap Server)!");
+            nSubmissionFailures += transactions.size();
+            log.error("\n\tPage " + reqCommId.getPageNum() + " Transactions : [503] Communication Failed (Soap Server)!");
             strResultContent.append(BillUtils.getNow("yyyy-MM-dd'T'HH:mm:ss Z")).append(SEPARATOR);
             strResultContent.append(SEPARATOR).append(SEPARATOR).append(SEPARATOR).append(SEPARATOR);
             strResultContent.append("500").append(SEPARATOR);
-            strResultContent.append("Page ").append(pageNum).append(": Process Failed (Soap Server)");
+            strResultContent.append("Page ").append(reqCommId.getPageNum()).append(": Process Failed (Soap Server)");
 
             writeContent(resultPath, strResultContent.toString(), StandardOpenOption.APPEND);
         }

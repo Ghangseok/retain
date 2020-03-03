@@ -1,13 +1,11 @@
 package com.att.retain.bill;
 
 import com.att.retain.bill.dto.RetainConnectionInfo;
+import com.att.retain.bill.model.RequestCommunicationId;
 import com.att.retain.bill.process.ReadWorker;
 import com.att.retain.bill.process.SubmitWorker;
 import com.att.retain.bill.service.IResponseWriter;
 import com.att.retain.bill.service.ITransactionsReader;
-import com.att.retain.bill.service.ResponseFileWriter;
-import com.att.retain.bill.service.TransactionDatabaseReader;
-import com.att.retain.bill.service.TransactionFileReader;
 import com.att.retain.bill.util.BillUtils;
 import com.vindicia.soap.v1_1.select.BillTransactionsResponse;
 import com.vindicia.soap.v1_1.selecttypes.Transaction;
@@ -54,15 +52,6 @@ public class SEL001BillSelect implements ApplicationRunner {
 
     RetainConnectionInfo retainConnectionInfo;
 
-    @Value("${submit.billTransactions.request_header}")
-    String request_header;
-    @Value("${submit.billTransactions.request_path}")
-    String request_path;
-    @Value("${submit.billTransactions.request_file}")
-    String request_file;
-    @Value("${submit.billTransactions.response_path}")
-    String response_path;
-
     @Value("${submit.billTransactions.pageSize}")
     Integer pageSize;
     @Value("${submit.billTransactions.maxThreadWorkers}")
@@ -71,10 +60,10 @@ public class SEL001BillSelect implements ApplicationRunner {
     Integer retryWaitingMsec;
     @Value("${submit.billTransactions.retryTimes}")
     Integer retryTimes;
-    @Value("${submit.billTransactions.txSource}")
-    String txSource;
 
+    @Autowired
     private ITransactionsReader transactionsReader;
+    @Autowired
     private IResponseWriter responseWriter;
 
     private ObjectProvider<ReadWorker> readWorkerObjectProvider;
@@ -104,9 +93,6 @@ public class SEL001BillSelect implements ApplicationRunner {
                     case "password":
                         this.password = argValue;
                         break;
-                    case "responsePath":
-                        this.response_path = argValue;
-                        break;
                     case "maxThreadWorkers":
                         this.maxThreadWorkers = Integer.parseInt(argValue);
                         break;
@@ -123,15 +109,6 @@ public class SEL001BillSelect implements ApplicationRunner {
         log.info("\n\tendpoint=" + endpoint + "\n\tlogin=" + username +
                 "\n\n\tversion=" + version + "\n\tuserAgent=" + userAgent +
                 "\n\ttimeOutInMilliSeconds=" + timeOutInMilliSeconds + "\n");
-
-        if (txSource != null && txSource.equals("FILE")) {
-            transactionsReader = new TransactionFileReader(request_header, request_path, request_file);
-            responseWriter = new ResponseFileWriter(response_path);
-        } else {
-            transactionsReader = new TransactionDatabaseReader();
-            responseWriter = new ResponseFileWriter(response_path);
-            //responseWriter = new ResponseDatabaseWriter();
-        }
     }
 
     @Override
@@ -154,11 +131,11 @@ public class SEL001BillSelect implements ApplicationRunner {
 
             while (bHasTransaction) { // Until all transactions are read from the source.
 
-                List<Callable<Pair<Integer, List<Transaction>>>> callableReader = new LinkedList<Callable<Pair<Integer, List<Transaction>>>>();
-                List<Future<Pair<Integer, List<Transaction>>>> listTransactionData = new LinkedList<Future<Pair<Integer, List<Transaction>>>>();
+                List<Callable<Pair<RequestCommunicationId, List<Transaction>>>> callableReader = new LinkedList<Callable<Pair<RequestCommunicationId, List<Transaction>>>>();
+                List<Future<Pair<RequestCommunicationId, List<Transaction>>>> listTransactionData = new LinkedList<Future<Pair<RequestCommunicationId, List<Transaction>>>>();
 
-                List<Callable<Pair<Integer, BillTransactionsResponse>>> listCallableBillTransaction = new LinkedList<Callable<Pair<Integer, BillTransactionsResponse>>>();
-                List<Future<Pair<Integer, BillTransactionsResponse>>> listBillTransactionsResponse = new LinkedList<Future<Pair<Integer, BillTransactionsResponse>>>();
+                List<Callable<Pair<RequestCommunicationId, BillTransactionsResponse>>> listCallableBillTransaction = new LinkedList<Callable<Pair<RequestCommunicationId, BillTransactionsResponse>>>();
+                List<Future<Pair<RequestCommunicationId, BillTransactionsResponse>>> listBillTransactionsResponse = new LinkedList<Future<Pair<RequestCommunicationId, BillTransactionsResponse>>>();
 
                 int bulkReadSize = maxThreadWorkers;
 
@@ -168,8 +145,8 @@ public class SEL001BillSelect implements ApplicationRunner {
                 while (bulkReadSize-- > 0) {
                     pageNum++;
 
-                    final Callable<Pair<Integer, List<Transaction>>> readWorker =
-                            readWorkerObjectProvider.getObject(transactionsReader, pageNum, pageSize);
+                    final Callable<Pair<RequestCommunicationId, List<Transaction>>> readWorker =
+                            new ReadWorker(transactionsReader, pageNum, pageSize);
                     callableReader.add(readWorker); // add the reader callable object into thread pool.
                 }
                 // Executes the given readers, returning a list of Futures holding their status and results when all complete.
@@ -178,13 +155,12 @@ public class SEL001BillSelect implements ApplicationRunner {
                 /***********************************************************************************************************
                  * Submit the transactions through SOAP concurrently
                  */
-                Map<Integer, List<Transaction>> mapTransactionsToPage = new HashMap<>();
-                for (Future<Pair<Integer, List<Transaction>>> future : listTransactionData) { // future has page # and list of transactions.
-                    Pair<Integer, List<Transaction>> txnsWithPageNum = future.get();
+                Map<RequestCommunicationId, List<Transaction>> mapTransactionsToPage = new HashMap<>();
+                for (Future<Pair<RequestCommunicationId, List<Transaction>>> future : listTransactionData) { // future has page # and list of transactions.
+                    Pair<RequestCommunicationId, List<Transaction>> txnsWithPageNum = future.get();
                     mapTransactionsToPage.put(txnsWithPageNum.getLeft(), txnsWithPageNum.getRight());
 
                     Transaction[] transactions = txnsWithPageNum.getRight().stream().toArray(Transaction[]::new);
-//                    Transaction[] transactions = txnsWithPageNum.getRight().toArray(new Transaction[0]);
 
                     if (transactions.length < pageSize) { // If there is at least one page which has transactions less than pageSize,
                                                           // it means the reader already read all transactions.
@@ -192,7 +168,7 @@ public class SEL001BillSelect implements ApplicationRunner {
                     }
 
                     if (transactions.length > 0) { // submit the only page which has transactions.
-                        Callable<Pair<Integer, BillTransactionsResponse>> submitWorker =
+                        Callable<Pair<RequestCommunicationId, BillTransactionsResponse>> submitWorker =
                                 new SubmitWorker(txnsWithPageNum.getLeft(), transactions, retainConnectionInfo);
                         listCallableBillTransaction.add(submitWorker); // add the submit transactions into thread pool.
                     }
@@ -203,8 +179,8 @@ public class SEL001BillSelect implements ApplicationRunner {
                 /***********************************************************************************************************
                  * Writing Result sequentially
                  */
-                for (Future<Pair<Integer, BillTransactionsResponse>> futureResponse : listBillTransactionsResponse) { // future has page # and response of submit.
-                    Pair<Integer, BillTransactionsResponse> responseWithPageNum = futureResponse.get();
+                for (Future<Pair<RequestCommunicationId, BillTransactionsResponse>> futureResponse : listBillTransactionsResponse) { // future has page # and response of submit.
+                    Pair<RequestCommunicationId, BillTransactionsResponse> responseWithPageNum = futureResponse.get();
 
                     Pair<Integer, Integer> resultCounts
                             = responseWriter.writeSubmitResult(responseWithPageNum.getLeft(),

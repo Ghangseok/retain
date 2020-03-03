@@ -1,6 +1,7 @@
 package com.att.retain.bill.process;
 
 import com.att.retain.bill.dto.RetainConnectionInfo;
+import com.att.retain.bill.model.RequestCommunicationId;
 import com.vindicia.soap.v1_1.select.BillTransactions;
 import com.vindicia.soap.v1_1.select.BillTransactionsResponse;
 import com.vindicia.soap.v1_1.select.SelectStub;
@@ -19,7 +20,7 @@ import java.util.concurrent.Callable;
 
 import static com.att.retain.bill.util.BillUtils.pause;
 
-public class SubmitWorker implements Callable<Pair<Integer, BillTransactionsResponse>> {
+public class SubmitWorker implements Callable<Pair<RequestCommunicationId, BillTransactionsResponse>> {
     static Logger log = LoggerFactory.getLogger(SubmitWorker.class);
 
     private Transaction[] transactions;
@@ -29,10 +30,10 @@ public class SubmitWorker implements Callable<Pair<Integer, BillTransactionsResp
     Authentication auth;
     Integer retryTimes;
     Integer retryWaitingMsec;
-    Integer pageNum;
+    RequestCommunicationId reqCommId;
 
 
-    public SubmitWorker(int pageNum, Transaction[] transactions, RetainConnectionInfo retainConnectionInfo) throws AxisFault {
+    public SubmitWorker(RequestCommunicationId reqCommId, Transaction[] transactions, RetainConnectionInfo retainConnectionInfo) throws AxisFault {
         this.transactions = transactions;
 
         select = new SelectStub(retainConnectionInfo.getEndpoint());
@@ -49,10 +50,10 @@ public class SubmitWorker implements Callable<Pair<Integer, BillTransactionsResp
         this.retryTimes = retainConnectionInfo.getRetryTimes();
         this.retryWaitingMsec = retainConnectionInfo.getRetryWaitingMsec();
 
-        this.pageNum = pageNum;
+        this.reqCommId = reqCommId;
     }
 
-    public Pair<Integer, BillTransactionsResponse> call() throws Exception {
+    public Pair<RequestCommunicationId, BillTransactionsResponse> call() throws Exception {
         BillTransactions billTransactions = new BillTransactions();
 
         billTransactions.setAuth(auth);
@@ -99,6 +100,6 @@ public class SubmitWorker implements Callable<Pair<Integer, BillTransactionsResp
         } catch (Exception e) {
             log.error(e.getMessage());
         }
-        return new ImmutablePair<>(this.pageNum, billTransactionsResponse);
+        return new ImmutablePair<>(this.reqCommId, billTransactionsResponse);
     }
 }

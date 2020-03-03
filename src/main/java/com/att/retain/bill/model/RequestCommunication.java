@@ -6,7 +6,6 @@ import javax.persistence.Id;
 import javax.persistence.IdClass;
 import javax.persistence.Table;
 import java.io.Serializable;
-import java.util.Date;
 import java.util.Objects;
 
 @Entity
@@ -19,10 +18,10 @@ public class RequestCommunication implements Serializable {
     private String reqDate;
     @Id
     @Column(name="REQ_ORD_NUM", nullable = false)
-    private int reqOrdNum;
+    private Integer reqOrdNum;
     @Id
     @Column(name="PAGE_NUM", nullable = false)
-    private int pageNum;
+    private Integer pageNum;
     @Column(name="SOAP_ID")
     private String soapId;
     @Column(name="STATUS")
@@ -30,9 +29,9 @@ public class RequestCommunication implements Serializable {
     @Column(name="MSG")
     private String msg;
     @Column(name="SUBMIT_DTTM")
-    private Date submitDttm;
+    private String submitDttm;
     @Column(name="CREATED_DTTM")
-    private Date createdDttm;
+    private String createdDttm;
 
     public String getReqDate() {
         return reqDate;
@@ -42,19 +41,19 @@ public class RequestCommunication implements Serializable {
         this.reqDate = reqDate;
     }
 
-    public int getReqOrdNum() {
+    public Integer getReqOrdNum() {
         return reqOrdNum;
     }
 
-    public void setReqOrdNum(int reqOrdNum) {
+    public void setReqOrdNum(Integer reqOrdNum) {
         this.reqOrdNum = reqOrdNum;
     }
 
-    public int getPageNum() {
+    public Integer getPageNum() {
         return pageNum;
     }
 
-    public void setPageNum(int pageNum) {
+    public void setPageNum(Integer pageNum) {
         this.pageNum = pageNum;
     }
 
@@ -82,19 +81,19 @@ public class RequestCommunication implements Serializable {
         this.msg = msg;
     }
 
-    public Date getSubmitDttm() {
+    public String getSubmitDttm() {
         return submitDttm;
     }
 
-    public void setSubmitDttm(Date submitDttm) {
+    public void setSubmitDttm(String submitDttm) {
         this.submitDttm = submitDttm;
     }
 
-    public Date getCreatedDttm() {
+    public String getCreatedDttm() {
         return createdDttm;
     }
 
-    public void setCreatedDttm(Date createdDttm) {
+    public void setCreatedDttm(String createdDttm) {
         this.createdDttm = createdDttm;
     }
 
@@ -103,9 +102,9 @@ public class RequestCommunication implements Serializable {
         if (this == o) return true;
         if (!(o instanceof RequestCommunication)) return false;
         RequestCommunication that = (RequestCommunication) o;
-        return getReqOrdNum() == that.getReqOrdNum() &&
-                getPageNum() == that.getPageNum() &&
-                getReqDate().equals(that.getReqDate());
+        return getReqDate().equals(that.getReqDate()) &&
+                getReqOrdNum().equals(that.getReqOrdNum()) &&
+                getPageNum().equals(that.getPageNum());
     }
 
     @Override

@@ -6,7 +6,6 @@ import javax.persistence.Id;
 import javax.persistence.IdClass;
 import javax.persistence.Table;
 import java.io.Serializable;
-import java.util.Date;
 import java.util.Objects;
 
 @Entity
@@ -19,7 +18,7 @@ public class RequestTransaction implements Serializable {
     private String reqDate;
     @Id
     @Column(name="REQ_ORD_NUM", nullable = false)
-    private int reqOrdNum;
+    private Integer reqOrdNum;
     @Id
     @Column(name="MERCHANT_TRANSACTION_ID", nullable = false)
     private String merchantTransactionId;
@@ -98,15 +97,15 @@ public class RequestTransaction implements Serializable {
     @Column(name="IS_READ", nullable = false)
     private String isRead;
     @Column(name="READ_DTTM")
-    private Date readDttm;
+    private String readDttm;
     @Column(name="PAGE_NUM")
-    private int pageNum;
+    private Integer pageNum;
     @Column(name="RETURN_CODE")
     private String returnCode;
     @Column(name="RETURN_MSG")
     private String returnMsg;
     @Column(name="CREATED_DTTM", nullable = false)
-    private Date createdDttm;
+    private String createdDttm;
 
     public String getReqDate() {
         return reqDate;
@@ -116,11 +115,11 @@ public class RequestTransaction implements Serializable {
         this.reqDate = reqDate;
     }
 
-    public int getReqOrdNum() {
+    public Integer getReqOrdNum() {
         return reqOrdNum;
     }
 
-    public void setReqOrdNum(int reqOrdNum) {
+    public void setReqOrdNum(Integer reqOrdNum) {
         this.reqOrdNum = reqOrdNum;
     }
 
@@ -428,19 +427,19 @@ public class RequestTransaction implements Serializable {
         this.isRead = isRead;
     }
 
-    public Date getReadDttm() {
+    public String getReadDttm() {
         return readDttm;
     }
 
-    public void setReadDttm(Date readDttm) {
+    public void setReadDttm(String readDttm) {
         this.readDttm = readDttm;
     }
 
-    public int getPageNum() {
+    public Integer getPageNum() {
         return pageNum;
     }
 
-    public void setPageNum(int pageNum) {
+    public void setPageNum(Integer pageNum) {
         this.pageNum = pageNum;
     }
 
@@ -460,11 +459,11 @@ public class RequestTransaction implements Serializable {
         this.returnMsg = returnMsg;
     }
 
-    public Date getCreatedDttm() {
+    public String getCreatedDttm() {
         return createdDttm;
     }
 
-    public void setCreatedDttm(Date createdDttm) {
+    public void setCreatedDttm(String createdDttm) {
         this.createdDttm = createdDttm;
     }
 
@@ -473,8 +472,8 @@ public class RequestTransaction implements Serializable {
         if (this == o) return true;
         if (!(o instanceof RequestTransaction)) return false;
         RequestTransaction that = (RequestTransaction) o;
-        return getReqOrdNum() == that.getReqOrdNum() &&
-                getReqDate().equals(that.getReqDate()) &&
+        return getReqDate().equals(that.getReqDate()) &&
+                getReqOrdNum().equals(that.getReqOrdNum()) &&
                 getMerchantTransactionId().equals(that.getMerchantTransactionId());
     }
 

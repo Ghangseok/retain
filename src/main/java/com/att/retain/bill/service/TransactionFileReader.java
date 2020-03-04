@@ -65,7 +65,7 @@ public class TransactionFileReader implements ITransactionsReader {
     public Pair<RequestCommunicationId, List<Transaction>> getTransaction(int page, int pageSize) {
 
         RequestCommunicationId requestCommunicationId = new RequestCommunicationId();
-        requestCommunicationId.setReqDate(getNow("YYYYMMDD"));
+        requestCommunicationId.setReqDate(getNow("yyyyMMdd"));
         requestCommunicationId.setReqOrdNum(0);
         requestCommunicationId.setPageNum(page);
 
